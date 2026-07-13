@@ -1,0 +1,22 @@
+{
+  "customer_name": "上海三稻智能科技有限公司",
+  "customer_id": "CUST-20260611-001",
+  "software_name": "企业AI知识库",
+  "software_version": "1.0.0",
+  "license_type": "enterprise",
+  "issue_date": "2026-06-11",
+  "expire_date": "2027-06-11",
+  "max_users": 50,
+  "hardware_fingerprint": "any",
+  "features": [
+    "rag",
+    "open_api",
+    "analytics",
+    "social",
+    "watch_dirs",
+    "approval"
+  ],
+  "issued_by": "上海四九信息科技有限公司",
+  "contact_email": "license@fournine.com",
+  "notes": ""
+}

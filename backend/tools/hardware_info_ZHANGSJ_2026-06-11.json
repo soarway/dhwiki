@@ -1,0 +1,29 @@
+{
+  "fingerprint_components": {
+    "machine_id": "2AFF07CC-34F6-11B2-A85C-D42AB028DD65",
+    "mac_address": "cc:d9:ac:cb:52:ab",
+    "hostname": "ZHANGSJ"
+  },
+  "hardware_fingerprint": "3983154900d9cdaec03753d66605d338417d1345d65891758f0a0331032141ce",
+  "system_info": {
+    "os": "Windows",
+    "os_version": "10.0.19045",
+    "os_release": "10",
+    "architecture": "AMD64",
+    "python_version": "3.12.9",
+    "hostname": "ZHANGSJ",
+    "ip_addresses": [
+      "fe80::ca69:c303:b784:a8bd",
+      "192.168.41.22",
+      "fe80::cb9c:4d80:8746:9229",
+      "fe80::6de8:f029:67ee:ff24",
+      "192.168.154.1",
+      "192.168.106.1"
+    ],
+    "cpu_model": "Intel(R) Core(TM) i9-10885H CPU @ 2.40GHz",
+    "cpu_cores": "16",
+    "memory": "63.7 GB",
+    "disk": "852 GB"
+  },
+  "collected_at": "2026-06-11"
+}

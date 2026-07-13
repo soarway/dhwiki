@@ -1,0 +1,1468 @@
+
+    __  _________ _   ____  ______    
+   /  |/  /  _/ /| | / / / / / __/    
+  / /|_/ // // /_| |/ / /_/ /\ \    
+ /_/  /_/___/____/___/\____/___/     
+
+Welcome to Milvus!
+Version:   2.6.9
+Built:     Mon Jan 19 09:34:44 UTC 2026
+GitCommit: a97d91cf22
+GoVersion: go version go1.24.11 linux/amd64
+
+TotalMem: 33543413760
+UsedMem: 35315712
+
+open pid file: /run/milvus/standalone.pid
+lock pid file: /run/milvus/standalone.pid
+[2026/05/22 16:17:02.475 +08:00] [INFO] [roles/roles.go:374] ["starting running Milvus components"]
+[2026/05/22 16:17:02.476 +08:00] [INFO] [tracer/tracer.go:52] ["Init tracer finished"] [Exporter=noop]
+[2026/05/22 16:17:02.476 +08:00] [INFO] [logutil/logutil.go:165] ["Log directory"] [configDir=]
+[2026/05/22 16:17:02.476 +08:00] [INFO] [logutil/logutil.go:166] ["Set log file to "] [path=]
+[2026/05/22 16:17:02.476 +08:00] [INFO] [roles/roles.go:323] [setupPrometheusHTTPServer]
+[2026/05/22 16:17:02.476 +08:00] [INFO] [http/server.go:284] ["management listen"] [addr=:9091]
+[2026/05/22 16:17:02.476 +08:00] [INFO] [gc/gc_tuner.go:135] ["GC Helper initialized."] ["Initial GoGC"=100] [minimumGOGC=30] [maximumGOGC=200] [memoryThreshold=30189072384]
+[2026/05/22 16:17:02.476 +08:00] [INFO] [etcd/etcd_util.go:75] ["create etcd client"] [useEmbedEtcd=false] [useSSL=false] [endpoints="[localhost:2379]"] [minVersion=1.3]
+[2026/05/22 16:17:02.476 +08:00] [WARN] [grpclog/grpclog.go:155] ["[core]Adjusting keepalive ping interval to minimum period of 10s"]
+[2026/05/22 16:17:02.477 +08:00] [INFO] [hookutil/cipher.go:359] ["empty so path for cipher plugin, skip to load plugin"]
+[2026/05/22 16:17:02.477 +08:00] [INFO] [resolver/resolver_with_discoverer.go:152] ["service discover task started, listening..."] [prefix=by-dev/meta/session/mixcoord] [exclusive=true] [semver=">=2.6.0-dev"] [component=grpc-resolver] [scheme=milvus-session]
+[2026/05/22 16:17:02.477 +08:00] [INFO] [resolver/resolver_with_discoverer.go:189] ["service discover update, update resolver"] [prefix=by-dev/meta/session/mixcoord] [exclusive=true] [semver=">=2.6.0-dev"] [component=grpc-resolver] [scheme=milvus-session] [state="Version: 3, Addrs: "] [resolver_count=0]
+[2026/05/22 16:17:02.477 +08:00] [INFO] [resolver/resolver_with_discoverer.go:199] ["update resolver done"] [prefix=by-dev/meta/session/mixcoord] [exclusive=true] [semver=">=2.6.0-dev"] [component=grpc-resolver] [scheme=milvus-session]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [assignment/watcher_impl.go:40] ["assignment watcher start"]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [rootcoord/root_coord.go:159] ["update rootcoord state"] [state=Abnormal]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [resolver/resolver_with_discoverer.go:152] ["service discover task started, listening..."] [component=grpc-resolver] [scheme=channel-assignment]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [querycoordv2/server.go:625] ["update querycoord state"] [state=Abnormal]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [resolver/resolver_with_discoverer.go:189] ["service discover update, update resolver"] [component=grpc-resolver] [scheme=channel-assignment] [state="Version: -1/-1, Addrs: "] [resolver_count=0]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [resolver/resolver_with_discoverer.go:157] ["new grpc resolver registered"] [prefix=by-dev/meta/session/mixcoord] [exclusive=true] [semver=">=2.6.0-dev"] [component=grpc-resolver] [scheme=milvus-session] [id=1]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [resolver/resolver_with_discoverer.go:199] ["update resolver done"] [component=grpc-resolver] [scheme=channel-assignment]
+[2026/05/22 16:17:02.482 +08:00] [WARN] [resolver/watch_based_grpc_resolver.go:54] ["fail to update resolver state"] [prefix=by-dev/meta/session/mixcoord] [exclusive=true] [semver=">=2.6.0-dev"] [component=grpc-resolver] [scheme=milvus-session] [id=1] [state="Version: 3, Addrs: "] [error="bad resolver state"]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [resolver/resolver_with_discoverer.go:157] ["new grpc resolver registered"] [component=grpc-resolver] [scheme=channel-assignment] [id=2]
+[2026/05/22 16:17:02.482 +08:00] [INFO] [mixcoord/service.go:107] ["MixCoord listen on"] [address="[::]:19530"] [port=19530]
+[2026/05/22 16:17:02.482 +08:00] [WARN] [resolver/watch_based_grpc_resolver.go:54] ["fail to update resolver state"] [component=grpc-resolver] [scheme=channel-assignment] [id=2] [state="Version: -1/-1, Addrs: "] [error="bad resolver state"]
+[2026/05/22 16:17:02.483 +08:00] [INFO] [mixcoord/service.go:132] ["init params done.."]
+[2026/05/22 16:17:02.483 +08:00] [INFO] [etcd/etcd_util.go:75] ["create etcd client"] [useEmbedEtcd=false] [useSSL=false] [endpoints="[localhost:2379]"] [minVersion=1.3]
+[2026/05/22 16:17:02.483 +08:00] [WARN] [grpclog/grpclog.go:155] ["[core]Adjusting keepalive ping interval to minimum period of 10s"]
+[2026/05/22 16:17:02.483 +08:00] [INFO] [pathutil/path_util.go:42] ["Get path for"] [pathType=3] [nodeID=0] [path=/var/lib/milvus/data/cache]
+[2026/05/22 16:17:02.483 +08:00] [INFO] [querynode/service.go:102] ["QueryNode listen on"] [address="[::]:45915"] [port=45915]
+[2026/05/22 16:17:02.483 +08:00] [INFO] [mixcoord/service.go:154] ["etcd connect done ..."]
+[2026/05/22 16:17:02.483 +08:00] [INFO] [etcd/etcd_util.go:75] ["create etcd client"] [useEmbedEtcd=false] [useSSL=false] [endpoints="[localhost:2379]"] [minVersion=1.3]
+[2026/05/22 16:17:02.483 +08:00] [WARN] [grpclog/grpclog.go:155] ["[core]Adjusting keepalive ping interval to minimum period of 10s"]
+[2026/05/22 16:17:02.483 +08:00] [INFO] [datanode/service.go:91] ["DataNode listen on"] [address="[::]:34119"] [port=34119]
+[2026/05/22 16:17:02.484 +08:00] [INFO] [etcd/etcd_util.go:75] ["create etcd client"] [useEmbedEtcd=false] [useSSL=false] [endpoints="[localhost:2379]"] [minVersion=1.3]
+[2026/05/22 16:17:02.484 +08:00] [WARN] [grpclog/grpclog.go:155] ["[core]Adjusting keepalive ping interval to minimum period of 10s"]
+[2026/05/22 16:17:02.484 +08:00] [INFO] [utils/util.go:60] ["Internal TLS Enabled"] [value=false]
+[2026/05/22 16:17:02.484 +08:00] [INFO] [hookutil/hook.go:71] ["empty so path, skip to load plugin"]
+[2026/05/22 16:17:02.484 +08:00] [INFO] [vecindexmgr/vector_index_mgr.go:129] ["init vector indexes with features : AISAQ : 2097166,BINFLAT : 720897,BIN_FLAT : 720897,BIN_IVF_FLAT : 524289,DISKANN : 2129934,FLAT : 720942,HNSW : 1605679,HNSWLIB_DEPRECATED : 1572879,HNSW_PQ : 1605678,HNSW_PRQ : 1605678,HNSW_SQ : 1605678,IVFBIN : 524289,IVFFLAT : 557102,IVFFLATCC : 32814,IVFPQ : 524334,IVFRABITQ : 524302,IVFSQ : 524334,IVF_FLAT : 557102,IVF_FLAT_CC : 32814,IVF_PQ : 524334,IVF_RABITQ : 524302,IVF_SQ : 524334,IVF_SQ8 : 524334,IVF_SQ_CC : 46,MINHASH_LSH : 2097153,SCANN : 524334,SCANN_DVR : 32782,SPARSE_INVERTED_INDEX : 524304,SPARSE_INVERTED_INDEX_CC : 524304,SPARSE_WAND : 524304,SPARSE_WAND_CC : 524304,"]
+[2026/05/22 16:17:02.484 +08:00] [INFO] [datanode/service.go:240] ["DataNode address"] [address=192.168.30.197:34119]
+[2026/05/22 16:17:02.484 +08:00] [INFO] [utils/util.go:60] ["Internal TLS Enabled"] [value=false]
+[2026/05/22 16:17:02.485 +08:00] [WARN] [proxy/listener_manager.go:49] ["Proxy fail to create external grpc listener"] [error="listen tcp :19530: bind: address already in use"]
+[2026/05/22 16:17:02.485 +08:00] [INFO] [streamingnode/service.go:116] ["StreamingNode listen on"] [address="[::]:41725"] [port=41725]
+[2026/05/22 16:17:02.485 +08:00] [INFO] [streamingnode/service.go:274] ["data coordinator connecting to metadata store"] [metaType=etcd]
+[2026/05/22 16:17:02.485 +08:00] [INFO] [streamingnode/service.go:317] ["StreamingNode init chunk manager..."]
+[2026/05/22 16:17:02.485 +08:00] [WARN] [roles/roles.go:252] ["component is not ready before closing"] [role=proxy] [error="prepare component failed: listen tcp :19530: bind: address already in use"] [errorVerbose="prepare component failed: listen tcp :19530: bind: address already in use\n(1) attached stack trace\n  -- stack trace:\n  | github.com/milvus-io/milvus/cmd/roles.runComponent[...].func1.1\n  | \t/home/jenkins/agent/workspace/cmd/roles/roles.go:126\n  | github.com/milvus-io/milvus/cmd/roles.runComponent[...].func1\n  | \t/home/jenkins/agent/workspace/cmd/roles/roles.go:133\n  | github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...].func1\n  | \t/home/jenkins/agent/workspace/pkg/util/conc/future.go:96\n  | runtime.goexit\n  | \t/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700\nWraps: (2) prepare component failed\nWraps: (3) listen tcp :19530\nWraps: (4) bind\nWraps: (5) address already in use\nError types: (1) *withstack.withStack (2) *errutil.withPrefix (3) *net.OpError (4) *os.SyscallError (5) syscall.Errno"]
+{"level":"warn","ts":"2026-05-22T16:17:02.485708+0800","logger":"etcd-client","caller":"v3@v3.5.23/retry_interceptor.go:63","msg":"retrying of unary invoker failed","target":"etcd-endpoints://0xc0011850e0/localhost:2379","attempt":0,"error":"rpc error: code = Canceled desc = context canceled"}
+panic: context canceled
+
+goroutine 238 gp=0xc001139c00 m=9 mp=0xc000182808 [running]:
+panic({0x6ff5a60?, 0xb719c40?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/panic.go:811 +0x168 fp=0xc002199a48 sp=0xc002199998 pc=0x28c7288
+github.com/milvus-io/milvus/internal/util/sessionutil.(*Session).Init(0xc0012a2820, {0x7a74d65, 0x8}, {0xc00109aa98, 0x14}, 0x80?, 0xe9?)
+	/home/jenkins/agent/workspace/internal/util/sessionutil/session_util.go:308 +0x4fd fp=0xc002199bc0 sp=0xc002199a48 pc=0x544633d
+github.com/milvus-io/milvus/internal/coordinator.(*mixCoordImpl).initSession(0xc001ac5560)
+	/home/jenkins/agent/workspace/internal/coordinator/mix_coord.go:358 +0x85 fp=0xc002199c00 sp=0xc002199bc0 pc=0x6324605
+github.com/milvus-io/milvus/internal/coordinator.(*mixCoordImpl).Init(0xc001ac5560)
+	/home/jenkins/agent/workspace/internal/coordinator/mix_coord.go:130 +0x36 fp=0xc002199c48 sp=0xc002199c00 pc=0x6321856
+github.com/milvus-io/milvus/internal/distributed/mixcoord.(*Server).init(0xc0023feb00)
+	/home/jenkins/agent/workspace/internal/distributed/mixcoord/service.go:167 +0x6bd fp=0xc002199e18 sp=0xc002199c48 pc=0x637931d
+github.com/milvus-io/milvus/internal/distributed/mixcoord.(*Server).Run(0xc0023feb00)
+	/home/jenkins/agent/workspace/internal/distributed/mixcoord/service.go:114 +0x1c fp=0xc002199e58 sp=0xc002199e18 pc=0x6378bbc
+github.com/milvus-io/milvus/cmd/components.(*MixCoord).Run(0xc0024eec18)
+	/home/jenkins/agent/workspace/cmd/components/mix_coord.go:58 +0x2b fp=0xc002199f38 sp=0xc002199e58 pc=0x691a46b
+github.com/milvus-io/milvus/cmd/roles.runComponent[...].func1()
+	/home/jenkins/agent/workspace/cmd/roles/roles.go:139 +0x9a fp=0xc002199fc0 sp=0xc002199f38 pc=0x692667a
+github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...].func1()
+	/home/jenkins/agent/workspace/pkg/util/conc/future.go:96 +0x23 fp=0xc002199fe0 sp=0xc002199fc0 pc=0x6926ba3
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002199fe8 sp=0xc002199fe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...] in goroutine 1
+	/home/jenkins/agent/workspace/pkg/util/conc/future.go:95 +0xe5
+
+goroutine 1 gp=0xc000002380 m=nil [chan receive]:
+runtime.gopark(0xdbfcf073f95f9?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc000f654f0 sp=0xc000f654d0 pc=0x28c804e
+runtime.chanrecv(0xc001b2f1f0, 0x0, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/chan.go:664 +0x445 fp=0xc000f65568 sp=0xc000f654f0 pc=0x285b2a5
+runtime.chanrecv1(0xc0024ee798?, 0xc000f655c0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/chan.go:506 +0x12 fp=0xc000f65590 sp=0xc000f65568 pc=0x285ae32
+github.com/milvus-io/milvus/internal/streamingcoord/client/assignment.(*AssignmentServiceImpl).Close(0xc0024edce0)
+	/home/jenkins/agent/workspace/internal/streamingcoord/client/assignment/assignment_impl.go:143 +0x65 fp=0xc000f655b8 sp=0xc000f65590 pc=0x57e81c5
+github.com/milvus-io/milvus/internal/streamingcoord/client.(*clientImpl).Close(0xc002362f90)
+	/home/jenkins/agent/workspace/internal/streamingcoord/client/client_impl.go:30 +0x25 fp=0xc000f655d0 sp=0xc000f655b8 pc=0x57ebe85
+github.com/milvus-io/milvus/internal/distributed/streaming.(*walAccesserImpl).Close(0xc001a55e30)
+	/home/jenkins/agent/workspace/internal/distributed/streaming/wal.go:197 +0x13f fp=0xc000f65660 sp=0xc000f655d0 pc=0x596c4df
+github.com/milvus-io/milvus/internal/distributed/streaming.Release()
+	/home/jenkins/agent/workspace/internal/distributed/streaming/streaming.go:35 +0x45 fp=0xc000f65678 sp=0xc000f65660 pc=0x5968d65
+github.com/milvus-io/milvus/cmd/roles.(*MilvusRoles).Run(0xc000963ef0)
+	/home/jenkins/agent/workspace/cmd/roles/roles.go:511 +0xfe5 fp=0xc000f65ba8 sp=0xc000f65678 pc=0x6923a25
+github.com/milvus-io/milvus/cmd/milvus.(*run).execute(0xbabf100, {0xc000192900, 0x3, 0x3}, 0xc00110d1f0)
+	/home/jenkins/agent/workspace/cmd/milvus/run.go:48 +0x2ae fp=0xc000f65c68 sp=0xc000f65ba8 pc=0x693120e
+github.com/milvus-io/milvus/cmd/milvus.RunMilvus({0xc000192900, 0x3, 0x3})
+	/home/jenkins/agent/workspace/cmd/milvus/milvus.go:60 +0x1e2 fp=0xc000f65cd8 sp=0xc000f65c68 pc=0x6930ec2
+main.main()
+	/home/jenkins/agent/workspace/cmd/main.go:102 +0x285 fp=0xc000f65f50 sp=0xc000f65cd8 pc=0x69355c5
+runtime.main()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:283 +0x28b fp=0xc000f65fe0 sp=0xc000f65f50 pc=0x289080b
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc000f65fe8 sp=0xc000f65fe0 pc=0x28d0cc1
+
+goroutine 2 gp=0xc000002e00 m=nil [force gc (idle)]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a4fa8 sp=0xc0000a4f88 pc=0x28c804e
+runtime.goparkunlock(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:441
+runtime.forcegchelper()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:348 +0xb3 fp=0xc0000a4fe0 sp=0xc0000a4fa8 pc=0x2890b53
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a4fe8 sp=0xc0000a4fe0 pc=0x28d0cc1
+created by runtime.init.7 in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:336 +0x1a
+
+goroutine 18 gp=0xc000102380 m=nil [GC sweep wait]:
+runtime.gopark(0x1?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a0780 sp=0xc0000a0760 pc=0x28c804e
+runtime.goparkunlock(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:441
+runtime.bgsweep(0xc000110000)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgcsweep.go:316 +0xdf fp=0xc0000a07c8 sp=0xc0000a0780 pc=0x2876e3f
+runtime.gcenable.gowrap1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:204 +0x25 fp=0xc0000a07e0 sp=0xc0000a07c8 pc=0x286b025
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a07e8 sp=0xc0000a07e0 pc=0x28d0cc1
+created by runtime.gcenable in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:204 +0x66
+
+goroutine 19 gp=0xc000102540 m=nil [GC scavenge wait]:
+runtime.gopark(0x10000?, 0x834b038?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a0f78 sp=0xc0000a0f58 pc=0x28c804e
+runtime.goparkunlock(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:441
+runtime.(*scavengerState).park(0xba5d180)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgcscavenge.go:425 +0x49 fp=0xc0000a0fa8 sp=0xc0000a0f78 pc=0x28746e9
+runtime.bgscavenge(0xc000110000)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgcscavenge.go:658 +0x59 fp=0xc0000a0fc8 sp=0xc0000a0fa8 pc=0x2874c99
+runtime.gcenable.gowrap2()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:205 +0x25 fp=0xc0000a0fe0 sp=0xc0000a0fc8 pc=0x286afc5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a0fe8 sp=0xc0000a0fe0 pc=0x28d0cc1
+created by runtime.gcenable in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:205 +0xa5
+
+goroutine 34 gp=0xc000184380 m=nil [finalizer wait]:
+runtime.gopark(0x0?, 0x7d35e70?, 0x40?, 0x24?, 0x2000000020?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a4630 sp=0xc0000a4610 pc=0x28c804e
+runtime.runfinq()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mfinal.go:196 +0x107 fp=0xc0000a47e0 sp=0xc0000a4630 pc=0x2869f67
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a47e8 sp=0xc0000a47e0 pc=0x28d0cc1
+created by runtime.createfing in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mfinal.go:166 +0x3d
+
+goroutine 35 gp=0xc000184540 m=nil [GC worker (idle)]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00023e738 sp=0xc00023e718 pc=0x28c804e
+runtime.gcBgMarkWorker(0xc000180150)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1423 +0xe9 fp=0xc00023e7c8 sp=0xc00023e738 pc=0x286d489
+runtime.gcBgMarkStartWorkers.gowrap1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x25 fp=0xc00023e7e0 sp=0xc00023e7c8 pc=0x286d365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00023e7e8 sp=0xc00023e7e0 pc=0x28d0cc1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x105
+
+goroutine 20 gp=0xc000102700 m=nil [GC worker (idle)]:
+runtime.gopark(0x495466ee1e303?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a1738 sp=0xc0000a1718 pc=0x28c804e
+runtime.gcBgMarkWorker(0xc000180150)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1423 +0xe9 fp=0xc0000a17c8 sp=0xc0000a1738 pc=0x286d489
+runtime.gcBgMarkStartWorkers.gowrap1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x25 fp=0xc0000a17e0 sp=0xc0000a17c8 pc=0x286d365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a17e8 sp=0xc0000a17e0 pc=0x28d0cc1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x105
+
+goroutine 3 gp=0xc0000036c0 m=nil [GC worker (idle)]:
+runtime.gopark(0x495466ee9265e?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a5738 sp=0xc0000a5718 pc=0x28c804e
+runtime.gcBgMarkWorker(0xc000180150)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1423 +0xe9 fp=0xc0000a57c8 sp=0xc0000a5738 pc=0x286d489
+runtime.gcBgMarkStartWorkers.gowrap1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x25 fp=0xc0000a57e0 sp=0xc0000a57c8 pc=0x286d365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a57e8 sp=0xc0000a57e0 pc=0x28d0cc1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x105
+
+goroutine 36 gp=0xc000184700 m=nil [GC worker (idle)]:
+runtime.gopark(0x495466eebf5bf?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00023ef38 sp=0xc00023ef18 pc=0x28c804e
+runtime.gcBgMarkWorker(0xc000180150)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1423 +0xe9 fp=0xc00023efc8 sp=0xc00023ef38 pc=0x286d489
+runtime.gcBgMarkStartWorkers.gowrap1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x25 fp=0xc00023efe0 sp=0xc00023efc8 pc=0x286d365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00023efe8 sp=0xc00023efe0 pc=0x28d0cc1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x105
+
+goroutine 21 gp=0xc0001028c0 m=nil [GC worker (idle)]:
+runtime.gopark(0x495466eeb197e?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a1f38 sp=0xc0000a1f18 pc=0x28c804e
+runtime.gcBgMarkWorker(0xc000180150)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1423 +0xe9 fp=0xc0000a1fc8 sp=0xc0000a1f38 pc=0x286d489
+runtime.gcBgMarkStartWorkers.gowrap1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x25 fp=0xc0000a1fe0 sp=0xc0000a1fc8 pc=0x286d365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a1fe8 sp=0xc0000a1fe0 pc=0x28d0cc1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x105
+
+goroutine 4 gp=0xc000003880 m=nil [GC worker (idle)]:
+runtime.gopark(0x495466eec1e00?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a5f38 sp=0xc0000a5f18 pc=0x28c804e
+runtime.gcBgMarkWorker(0xc000180150)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1423 +0xe9 fp=0xc0000a5fc8 sp=0xc0000a5f38 pc=0x286d489
+runtime.gcBgMarkStartWorkers.gowrap1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x25 fp=0xc0000a5fe0 sp=0xc0000a5fc8 pc=0x286d365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a5fe8 sp=0xc0000a5fe0 pc=0x28d0cc1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1339 +0x105
+
+goroutine 50 gp=0xc00131e000 m=nil [select]:
+runtime.gopark(0xc0000b4f78?, 0x2?, 0xe8?, 0xb3?, 0xc0000b4f3c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000b4dc8 sp=0xc0000b4da8 pc=0x28c804e
+runtime.selectgo(0xc0000b4f78, 0xc0000b4f38, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0000b4f00 sp=0xc0000b4dc8 pc=0x28a3657
+github.com/panjf2000/ants/v2.(*poolCommon).purgeStaleWorkers(0xc00131c000)
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:253 +0xf2 fp=0xc0000b4fc8 sp=0xc0000b4f00 pc=0x5238c12
+github.com/panjf2000/ants/v2.(*poolCommon).goPurge.gowrap1()
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:317 +0x25 fp=0xc0000b4fe0 sp=0xc0000b4fc8 pc=0x5239145
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000b4fe8 sp=0xc0000b4fe0 pc=0x28d0cc1
+created by github.com/panjf2000/ants/v2.(*poolCommon).goPurge in goroutine 1
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:317 +0xbc
+
+goroutine 51 gp=0xc00131e1c0 m=nil [select]:
+runtime.gopark(0xc0000a2f78?, 0x2?, 0x8?, 0xa1?, 0xc0000a2f3c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a2dc8 sp=0xc0000a2da8 pc=0x28c804e
+runtime.selectgo(0xc0000a2f78, 0xc0000a2f38, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0000a2f00 sp=0xc0000a2dc8 pc=0x28a3657
+github.com/panjf2000/ants/v2.(*poolCommon).ticktock(0xc00131c000)
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:296 +0x13a fp=0xc0000a2fc8 sp=0xc0000a2f00 pc=0x5238f5a
+github.com/panjf2000/ants/v2.(*poolCommon).goTicktock.gowrap1()
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:323 +0x25 fp=0xc0000a2fe0 sp=0xc0000a2fc8 pc=0x52392c5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a2fe8 sp=0xc0000a2fe0 pc=0x28d0cc1
+created by github.com/panjf2000/ants/v2.(*poolCommon).goTicktock in goroutine 1
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:323 +0xf6
+
+goroutine 5 gp=0xc00127ddc0 m=nil [chan receive]:
+runtime.gopark(0xc001234a00?, 0xc000979f68?, 0x60?, 0x1f?, 0x2bcbb88?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc000241f18 sp=0xc000241ef8 pc=0x28c804e
+runtime.chanrecv(0xc000084770, 0x0, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/chan.go:664 +0x445 fp=0xc000241f90 sp=0xc000241f18 pc=0x285b2a5
+runtime.chanrecv1(0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/chan.go:506 +0x12 fp=0xc000241fb8 sp=0xc000241f90 pc=0x285ae32
+runtime.unique_runtime_registerUniqueMapCleanup.func2(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1797
+runtime.unique_runtime_registerUniqueMapCleanup.gowrap1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1800 +0x2f fp=0xc000241fe0 sp=0xc000241fb8 pc=0x286e16f
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc000241fe8 sp=0xc000241fe0 pc=0x28d0cc1
+created by unique.runtime_registerUniqueMapCleanup in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/mgc.go:1795 +0x79
+
+goroutine 6 gp=0xc00131ec40 m=nil [select]:
+runtime.gopark(0xc0000a3750?, 0x3?, 0x0?, 0x0?, 0xc0000a370a?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000bbd90 sp=0xc0000bbd70 pc=0x28c804e
+runtime.selectgo(0xc0000bbf50, 0xc0000a3704, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0000bbec8 sp=0xc0000bbd90 pc=0x28a3657
+mosn.io/pkg/log.(*Logger).handler(0xc001323180)
+	/go/pkg/mod/mosn.io/pkg@v0.0.0-20211217101631-d914102d1baf/log/logger.go:225 +0xe5 fp=0xc0000bbfc8 sp=0xc0000bbec8 pc=0x60f80e5
+mosn.io/pkg/log.(*Logger).start.gowrap1()
+	/go/pkg/mod/mosn.io/pkg@v0.0.0-20211217101631-d914102d1baf/log/logger.go:211 +0x25 fp=0xc0000bbfe0 sp=0xc0000bbfc8 pc=0x60f7fc5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000bbfe8 sp=0xc0000bbfe0 pc=0x28d0cc1
+created by mosn.io/pkg/log.(*Logger).start in goroutine 1
+	/go/pkg/mod/mosn.io/pkg@v0.0.0-20211217101631-d914102d1baf/log/logger.go:211 +0x225
+
+goroutine 195 gp=0xc00131ee00 m=nil [select]:
+runtime.gopark(0xc001abdf80?, 0x2?, 0x0?, 0x0?, 0xc001abdf7c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001abde08 sp=0xc001abdde8 pc=0x28c804e
+runtime.selectgo(0xc001abdf80, 0xc001abdf78, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001abdf40 sp=0xc001abde08 pc=0x28a3657
+go.uber.org/zap/zapcore.(*BufferedWriteSyncer).flushLoop(0xc0014b1920)
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/buffered_write_syncer.go:176 +0xa5 fp=0xc001abdfc8 sp=0xc001abdf40 pc=0x30a3de5
+go.uber.org/zap/zapcore.(*BufferedWriteSyncer).initialize.gowrap1()
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/buffered_write_syncer.go:132 +0x25 fp=0xc001abdfe0 sp=0xc001abdfc8 pc=0x30a3945
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001abdfe8 sp=0xc001abdfe0 pc=0x28d0cc1
+created by go.uber.org/zap/zapcore.(*BufferedWriteSyncer).initialize in goroutine 212
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/buffered_write_syncer.go:132 +0x265
+
+goroutine 65 gp=0xc00131efc0 m=nil [select]:
+runtime.gopark(0xc0000a6708?, 0x2?, 0x0?, 0x0?, 0xc0000a6704?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a6598 sp=0xc0000a6578 pc=0x28c804e
+runtime.selectgo(0xc0000a6708, 0xc0000a6700, 0xc0000a6758?, 0x0, 0xc000fe5ec0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0000a66d0 sp=0xc0000a6598 pc=0x28a3657
+github.com/milvus-io/milvus/pkg/v2/util/syncutil.(*Future[...]).GetWithContext(0xc00131efc0, {0x83cc840?, 0xc0011171d0})
+	/home/jenkins/agent/workspace/pkg/util/syncutil/future.go:28 +0x69 fp=0xc0000a6738 sp=0xc0000a66d0 pc=0x57e56c9
+github.com/milvus-io/milvus/internal/streamingcoord/server/balancer/balance.GetWithContext(...)
+	/home/jenkins/agent/workspace/internal/streamingcoord/server/balancer/balance/singleton.go:17
+github.com/milvus-io/milvus/internal/coordinator/snmanager.(*StreamingNodeManager).execute(0xc001b7d830)
+	/home/jenkins/agent/workspace/internal/coordinator/snmanager/streaming_node_manager.go:175 +0x7d fp=0xc0000a67c8 sp=0xc0000a6738 pc=0x57e669d
+github.com/milvus-io/milvus/internal/coordinator/snmanager.newStreamingNodeManager.gowrap1()
+	/home/jenkins/agent/workspace/internal/coordinator/snmanager/streaming_node_manager.go:31 +0x25 fp=0xc0000a67e0 sp=0xc0000a67c8 pc=0x57e5d05
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a67e8 sp=0xc0000a67e0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/coordinator/snmanager.newStreamingNodeManager in goroutine 1
+	/home/jenkins/agent/workspace/internal/coordinator/snmanager/streaming_node_manager.go:31 +0x1c7
+
+goroutine 149 gp=0xc000983180 m=nil [select]:
+runtime.gopark(0xc0000a7760?, 0x2?, 0xa8?, 0x3c?, 0xc0000a7724?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a75b0 sp=0xc0000a7590 pc=0x28c804e
+runtime.selectgo(0xc0000a7760, 0xc0000a7720, 0xc000fe5e60?, 0x0, 0xc0000a7740?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0000a76e8 sp=0xc0000a75b0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc001bb3aa0, {0x83cc840, 0xc001505220})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc0000a77b8 sp=0xc0000a76e8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc0000a77e0 sp=0xc0000a77b8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a77e8 sp=0xc0000a77e0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 1
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 150 gp=0xc000102a80 m=nil [select]:
+runtime.gopark(0xc00008bf60?, 0x2?, 0xe0?, 0x59?, 0xc00008bf24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00008bdb0 sp=0xc00008bd90 pc=0x28c804e
+runtime.selectgo(0xc00008bf60, 0xc00008bf20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc00008bee8 sp=0xc00008bdb0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc001bb3ad0, {0x83cc840, 0xc001505270})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc00008bfb8 sp=0xc00008bee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc00008bfe0 sp=0xc00008bfb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00008bfe8 sp=0xc00008bfe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 1
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 151 gp=0xc000102c40 m=nil [select]:
+runtime.gopark(0xc001bf9f60?, 0x2?, 0xe5?, 0x78?, 0xc001bf9f24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001bf9db0 sp=0xc001bf9d90 pc=0x28c804e
+runtime.selectgo(0xc001bf9f60, 0xc001bf9f20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001bf9ee8 sp=0xc001bf9db0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc001bb3b00, {0x83cc840, 0xc0015052c0})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc001bf9fb8 sp=0xc001bf9ee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc001bf9fe0 sp=0xc001bf9fb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001bf9fe8 sp=0xc001bf9fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 1
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 64 gp=0xc000003dc0 m=nil [select]:
+runtime.gopark(0xc000241778?, 0x2?, 0xc0?, 0xa5?, 0xc000241764?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0002415f0 sp=0xc0002415d0 pc=0x28c804e
+runtime.selectgo(0xc000241778, 0xc000241760, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc000241728 sp=0xc0002415f0 pc=0x28a3657
+github.com/hashicorp/golang-lru/v2/expirable.NewLRU[...].func1()
+	/go/pkg/mod/github.com/hashicorp/golang-lru/v2@v2.0.7/expirable/expirable_lru.go:86 +0xf5 fp=0xc0002417c8 sp=0xc000241728 pc=0x5f75b75
+github.com/hashicorp/golang-lru/v2/expirable.NewLRU[...].gowrap1()
+	/go/pkg/mod/github.com/hashicorp/golang-lru/v2@v2.0.7/expirable/expirable_lru.go:93 +0x24 fp=0xc0002417e0 sp=0xc0002417c8 pc=0x5f75a44
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0002417e8 sp=0xc0002417e0 pc=0x28d0cc1
+created by github.com/hashicorp/golang-lru/v2/expirable.NewLRU[...] in goroutine 1
+	/go/pkg/mod/github.com/hashicorp/golang-lru/v2@v2.0.7/expirable/expirable_lru.go:82 +0x32a
+
+goroutine 157 gp=0xc00094a540 m=nil [select]:
+runtime.gopark(0xc001aaaf58?, 0x2?, 0xe?, 0x0?, 0xc001aaaea4?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001aaad28 sp=0xc001aaad08 pc=0x28c804e
+runtime.selectgo(0xc001aaaf58, 0xc001aaaea0, 0xc001090150?, 0x0, 0x1?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001aaae60 sp=0xc001aaad28 pc=0x28a3657
+github.com/milvus-io/milvus/pkg/v2/config.(*refresher).refreshPeriodically(0xc0015041e0, {0x7a7cf66, 0xa})
+	/home/jenkins/agent/workspace/pkg/config/refresher.go:71 +0x228 fp=0xc001aaafb8 sp=0xc001aaae60 pc=0x36c0248
+github.com/milvus-io/milvus/pkg/v2/config.(*refresher).start.func1.gowrap1()
+	/home/jenkins/agent/workspace/pkg/config/refresher.go:52 +0x28 fp=0xc001aaafe0 sp=0xc001aaafb8 pc=0x36bff28
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001aaafe8 sp=0xc001aaafe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/pkg/v2/config.(*refresher).start.func1 in goroutine 1
+	/home/jenkins/agent/workspace/pkg/config/refresher.go:52 +0x94
+
+goroutine 154 gp=0xc00094a700 m=nil [IO wait]:
+runtime.gopark(0x2f5a3e0?, 0xc0012aa190?, 0x20?, 0xfb?, 0xb?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001bffb20 sp=0xc001bffb00 pc=0x28c804e
+runtime.netpollblock(0x2934d18?, 0x2857ca6?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xc001bffb58 sp=0xc001bffb20 pc=0x2888c37
+internal/poll.runtime_pollWait(0x705a30c88d88, 0x72)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xc001bffb78 sp=0xc001bffb58 pc=0x28c6925
+internal/poll.(*pollDesc).wait(0xc0012d6000?, 0xc000050000?, 0x0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc001bffba0 sp=0xc001bffb78 pc=0x2958ce7
+internal/poll.(*pollDesc).waitRead(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc0012d6000, {0xc000050000, 0x8000, 0x8000})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_unix.go:165 +0x27a fp=0xc001bffc38 sp=0xc001bffba0 pc=0x295a11a
+net.(*netFD).Read(0xc0012d6000, {0xc000050000?, 0x285a4b4?, 0x0?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/fd_posix.go:55 +0x25 fp=0xc001bffc80 sp=0xc001bffc38 pc=0x2bf1465
+net.(*conn).Read(0xc0001960c0, {0xc000050000?, 0x28c4d99?, 0xc001bffd70?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/net.go:194 +0x45 fp=0xc001bffcc8 sp=0xc001bffc80 pc=0x2c041e5
+bufio.(*Reader).Read(0xc0016fe480, {0xc0012e3b64, 0x9, 0x75bbc80?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0xc001bffd00 sp=0xc001bffcc8 pc=0x2a00e97
+io.ReadAtLeast({0x837b440, 0xc0016fe480}, {0xc0012e3b64, 0x9, 0x9}, 0x9)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:335 +0x91 fp=0xc001bffd48 sp=0xc001bffd00 pc=0x2925111
+io.ReadFull(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc0012e3b64, 0x9, 0x0?}, {0x837b440?, 0xc0016fe480?})
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65 fp=0xc001bffd98 sp=0xc001bffd48 pc=0x2f1e745
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc0012e3b20)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b fp=0xc001bffe20 sp=0xc001bffd98 pc=0x2f1f34b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc0012e3b20)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18 fp=0xc001bffe60 sp=0xc001bffe20 pc=0x2f1fa98
+google.golang.org/grpc/internal/transport.(*http2Client).reader(0xc001a96488, 0xc0019ec070)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1640 +0x1d2 fp=0xc001bfffc0 sp=0xc001bffe60 pc=0x2f6f032
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap4()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x25 fp=0xc001bfffe0 sp=0xc001bfffc0 pc=0x2f65305
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001bfffe8 sp=0xc001bfffe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 162
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x1e73
+
+goroutine 155 gp=0xc00094a8c0 m=nil [select]:
+runtime.gopark(0xc001aa9ed8?, 0x2?, 0xa9?, 0xb8?, 0xc001aa9eac?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001aa9d40 sp=0xc001aa9d20 pc=0x28c804e
+runtime.selectgo(0xc001aa9ed8, 0xc001aa9ea8, 0x2f7baf6?, 0x0, 0xc000058000?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001aa9e78 sp=0xc001aa9d40 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc0012aa180, 0x1)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:412 +0x108 fp=0xc001aa9f08 sp=0xc001aa9e78 pc=0x2f5a548
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc00164e600)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:575 +0x78 fp=0xc001aa9f68 sp=0xc001aa9f08 pc=0x2f5ad18
+google.golang.org/grpc/internal/transport.NewHTTP2Client.func6()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:472 +0xd2 fp=0xc001aa9fe0 sp=0xc001aa9f68 pc=0x2f651f2
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001aa9fe8 sp=0xc001aa9fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 162
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:470 +0x2452
+
+goroutine 183 gp=0xc0001856c0 m=nil [select, locked to thread]:
+runtime.gopark(0xc0000a7fa8?, 0x2?, 0xac?, 0xa8?, 0xc0000a7f94?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a7e20 sp=0xc0000a7e00 pc=0x28c804e
+runtime.selectgo(0xc0000a7fa8, 0xc0000a7f90, 0x0?, 0x0, 0xc0016ffc01?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0000a7f58 sp=0xc0000a7e20 pc=0x28a3657
+runtime.ensureSigM.func1()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/signal_unix.go:1085 +0x192 fp=0xc0000a7fe0 sp=0xc0000a7f58 pc=0x28c1712
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a7fe8 sp=0xc0000a7fe0 pc=0x28d0cc1
+created by runtime.ensureSigM in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/signal_unix.go:1068 +0xc8
+
+goroutine 161 gp=0xc00094aa80 m=4 mp=0xc0000ab808 [syscall]:
+runtime.notetsleepg(0xbac2aa0, 0xffffffffffffffff)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/lock_futex.go:123 +0x29 fp=0xc00023a7a0 sp=0xc00023a778 pc=0x2860fa9
+os/signal.signal_recv()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/sigqueue.go:152 +0x29 fp=0xc00023a7c0 sp=0xc00023a7a0 pc=0x28ca5e9
+os/signal.loop()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/os/signal/signal_unix.go:23 +0x13 fp=0xc00023a7e0 sp=0xc00023a7c0 pc=0x29a4033
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00023a7e8 sp=0xc00023a7e0 pc=0x28d0cc1
+created by os/signal.Notify.func1.1 in goroutine 1
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/os/signal/signal.go:152 +0x1f
+
+goroutine 145 gp=0xc000102e00 m=nil [select]:
+runtime.gopark(0xc000240788?, 0x2?, 0x18?, 0x0?, 0xc000240714?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0002405a0 sp=0xc000240580 pc=0x28c804e
+runtime.selectgo(0xc000240788, 0xc000240710, 0xc001a62e60?, 0x0, 0x6?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0002406d8 sp=0xc0002405a0 pc=0x28a3657
+github.com/milvus-io/milvus/cmd/roles.(*MilvusRoles).handleSignals.func1()
+	/home/jenkins/agent/workspace/cmd/roles/roles.go:348 +0xeb fp=0xc0002407e0 sp=0xc0002406d8 pc=0x69227eb
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0002407e8 sp=0xc0002407e0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/cmd/roles.(*MilvusRoles).handleSignals in goroutine 1
+	/home/jenkins/agent/workspace/cmd/roles/roles.go:345 +0x12b
+
+goroutine 210 gp=0xc000102fc0 m=nil [select]:
+runtime.gopark(0xc0014cdf48?, 0x2?, 0xa0?, 0x48?, 0xc0014cde68?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0014cdcf8 sp=0xc0014cdcd8 pc=0x28c804e
+runtime.selectgo(0xc0014cdf48, 0xc0014cde64, 0xc59f2?, 0x0, 0xc59f2?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0014cde30 sp=0xc0014cdcf8 pc=0x28a3657
+github.com/milvus-io/milvus/internal/util/metrics.(*threadWatcher).watchThreadNum(0xc001be7c20)
+	/home/jenkins/agent/workspace/internal/util/metrics/thread.go:67 +0x2f8 fp=0xc0014cdfa8 sp=0xc0014cde30 pc=0x612d7b8
+github.com/milvus-io/milvus/internal/util/metrics.(*threadWatcher).Start.func1.1()
+	/home/jenkins/agent/workspace/internal/util/metrics/thread.go:52 +0x49 fp=0xc0014cdfe0 sp=0xc0014cdfa8 pc=0x612d429
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0014cdfe8 sp=0xc0014cdfe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/util/metrics.(*threadWatcher).Start.func1 in goroutine 1
+	/home/jenkins/agent/workspace/internal/util/metrics/thread.go:50 +0x65
+
+goroutine 211 gp=0xc000103180 m=nil [select]:
+runtime.gopark(0xc001ac1f30?, 0x3?, 0x0?, 0x0?, 0xc001ac1ef2?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001ac1d70 sp=0xc001ac1d50 pc=0x28c804e
+runtime.selectgo(0xc001ac1f30, 0xc001ac1eec, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001ac1ea8 sp=0xc001ac1d70 pc=0x28a3657
+go.opentelemetry.io/otel/sdk/trace.(*batchSpanProcessor).processQueue(0xc0014acd20)
+	/go/pkg/mod/go.opentelemetry.io/otel/sdk@v1.34.0/trace/batch_span_processor.go:302 +0x114 fp=0xc001ac1fa0 sp=0xc001ac1ea8 pc=0x3427494
+go.opentelemetry.io/otel/sdk/trace.NewBatchSpanProcessor.func1()
+	/go/pkg/mod/go.opentelemetry.io/otel/sdk@v1.34.0/trace/batch_span_processor.go:117 +0x4e fp=0xc001ac1fe0 sp=0xc001ac1fa0 pc=0x34266ee
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001ac1fe8 sp=0xc001ac1fe0 pc=0x28d0cc1
+created by go.opentelemetry.io/otel/sdk/trace.NewBatchSpanProcessor in goroutine 1
+	/go/pkg/mod/go.opentelemetry.io/otel/sdk@v1.34.0/trace/batch_span_processor.go:115 +0x2d9
+
+goroutine 212 gp=0xc000103340 m=nil [select]:
+runtime.gopark(0xc001ac2780?, 0x2?, 0x38?, 0x26?, 0xc001ac276c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001ac25f8 sp=0xc001ac25d8 pc=0x28c804e
+runtime.selectgo(0xc001ac2780, 0xc001ac2768, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001ac2730 sp=0xc001ac25f8 pc=0x28a3657
+github.com/milvus-io/milvus/pkg/v2/log.(*asyncTextIOCore).background(0xc0014b1980)
+	/home/jenkins/agent/workspace/pkg/log/zap_async_buffered_write_core.go:201 +0xe5 fp=0xc001ac27c8 sp=0xc001ac2730 pc=0x361cda5
+github.com/milvus-io/milvus/pkg/v2/log.NewAsyncTextIOCore.gowrap1()
+	/home/jenkins/agent/workspace/pkg/log/zap_async_buffered_write_core.go:54 +0x25 fp=0xc001ac27e0 sp=0xc001ac27c8 pc=0x361c2c5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001ac27e8 sp=0xc001ac27e0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/pkg/v2/log.NewAsyncTextIOCore in goroutine 1
+	/home/jenkins/agent/workspace/pkg/log/zap_async_buffered_write_core.go:54 +0x1fa
+
+goroutine 213 gp=0xc000103500 m=nil [IO wait]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002109b38 sp=0xc002109b18 pc=0x28c804e
+runtime.netpollblock(0x28c4ff3?, 0x2857ca6?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xc002109b70 sp=0xc002109b38 pc=0x2888c37
+internal/poll.runtime_pollWait(0x705a30c88a40, 0x72)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xc002109b90 sp=0xc002109b70 pc=0x28c6925
+internal/poll.(*pollDesc).wait(0xc001438000?, 0x380016?, 0x0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc002109bb8 sp=0xc002109b90 pc=0x2958ce7
+internal/poll.(*pollDesc).waitRead(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc001438000)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_unix.go:620 +0x295 fp=0xc002109c60 sp=0xc002109bb8 pc=0x295e1f5
+net.(*netFD).accept(0xc001438000)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/fd_unix.go:172 +0x29 fp=0xc002109d18 sp=0xc002109c60 pc=0x2bf3449
+net.(*TCPListener).accept(0xc0021020c0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/tcpsock_posix.go:159 +0x1b fp=0xc002109d68 sp=0xc002109d18 pc=0x2c0e1fb
+net.(*TCPListener).Accept(0xc0021020c0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/tcpsock.go:380 +0x30 fp=0xc002109d98 sp=0xc002109d68 pc=0x2c0d210
+net/http.(*onceCloseListener).Accept(0x83cc760?)
+	<autogenerated>:1 +0x24 fp=0xc002109db0 sp=0xc002109d98 pc=0x2d74944
+net/http.(*Server).Serve(0xc0013c0300, {0x83b9de0, 0xc0021020c0})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/http/server.go:3424 +0x30c fp=0xc002109ee0 sp=0xc002109db0 pc=0x2d45b0c
+net/http.(*Server).ListenAndServe(0xc0013c0300)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/http/server.go:3350 +0x71 fp=0xc002109f10 sp=0xc002109ee0 pc=0x2d45711
+github.com/milvus-io/milvus/internal/http.ServeHTTP.func1()
+	/home/jenkins/agent/workspace/internal/http/server.go:293 +0x19a fp=0xc002109fe0 sp=0xc002109f10 pc=0x63208da
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002109fe8 sp=0xc002109fe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/http.ServeHTTP in goroutine 1
+	/home/jenkins/agent/workspace/internal/http/server.go:282 +0x1f
+
+goroutine 217 gp=0xc0001036c0 m=nil [select]:
+runtime.gopark(0xc001ac3760?, 0x2?, 0x0?, 0x0?, 0xc001ac3724?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001ac35b0 sp=0xc001ac3590 pc=0x28c804e
+runtime.selectgo(0xc001ac3760, 0xc001ac3720, 0xc000fe5e60?, 0x0, 0xc001ac3740?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001ac36e8 sp=0xc001ac35b0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc001ac6de0, {0x83cc840, 0xc001b2cf50})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc001ac37b8 sp=0xc001ac36e8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc001ac37e0 sp=0xc001ac37b8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001ac37e8 sp=0xc001ac37e0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 1
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 218 gp=0xc000103880 m=nil [select]:
+runtime.gopark(0xc001bfbf60?, 0x2?, 0xe0?, 0x59?, 0xc001bfbf24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001bfbdb0 sp=0xc001bfbd90 pc=0x28c804e
+runtime.selectgo(0xc001bfbf60, 0xc001bfbf20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001bfbee8 sp=0xc001bfbdb0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc001ac6e10, {0x83cc840, 0xc001b2cfa0})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc001bfbfb8 sp=0xc001bfbee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc001bfbfe0 sp=0xc001bfbfb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001bfbfe8 sp=0xc001bfbfe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 1
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 219 gp=0xc000103a40 m=nil [select]:
+runtime.gopark(0xc001aebf60?, 0x2?, 0xe5?, 0x78?, 0xc001aebf24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001aebdb0 sp=0xc001aebd90 pc=0x28c804e
+runtime.selectgo(0xc001aebf60, 0xc001aebf20, 0x299ec54?, 0x0, 0xc00137e0f0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001aebee8 sp=0xc001aebdb0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc001ac6e40, {0x83cc840, 0xc001b2cff0})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc001aebfb8 sp=0xc001aebee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc001aebfe0 sp=0xc001aebfb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001aebfe8 sp=0xc001aebfe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 1
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 184 gp=0xc001138380 m=nil [select]:
+runtime.gopark(0xc00218dd70?, 0x2?, 0x80?, 0x43?, 0xc00218dd54?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00218db88 sp=0xc00218db68 pc=0x28c804e
+runtime.selectgo(0xc00218dd70, 0xc00218dd50, 0xc001b2d5e0?, 0x0, 0xc001138380?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc00218dcc0 sp=0xc00218db88 pc=0x28a3657
+github.com/milvus-io/milvus/internal/util/streamingutil/service/discoverer.(*sessionDiscoverer).watch(0xc001accfc0, {0x83cc840, 0xc001b2d5e0}, 0xc00205b8b0)
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/discoverer/session_discoverer.go:117 +0x1f1 fp=0xc00218de78 sp=0xc00218dcc0 pc=0x5454391
+github.com/milvus-io/milvus/internal/util/streamingutil/service/discoverer.(*sessionDiscoverer).Discover(0xc001accfc0, {0x83cc840, 0xc001b2d5e0}, 0xc00205b8b0)
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/discoverer/session_discoverer.go:99 +0xd3 fp=0xc00218df30 sp=0xc00218de78 pc=0x5454153
+github.com/milvus-io/milvus/internal/util/streamingutil/service/resolver.(*resolverWithDiscoverer).asyncDiscover.func1()
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/resolver/resolver_with_discoverer.go:213 +0x98 fp=0xc00218dfe0 sp=0xc00218df30 pc=0x5458f78
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00218dfe8 sp=0xc00218dfe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/util/streamingutil/service/resolver.(*resolverWithDiscoverer).asyncDiscover in goroutine 228
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/resolver/resolver_with_discoverer.go:212 +0xa5
+
+goroutine 228 gp=0xc001138540 m=nil [select]:
+runtime.gopark(0xc001bfddc8?, 0x2?, 0x0?, 0x0?, 0xc001bfdce4?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001bfdb48 sp=0xc001bfdb28 pc=0x28c804e
+runtime.selectgo(0xc001bfddc8, 0xc001bfdce0, 0xbabf100?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001bfdc80 sp=0xc001bfdb48 pc=0x28a3657
+github.com/milvus-io/milvus/internal/util/streamingutil/service/resolver.(*resolverWithDiscoverer).doDiscover(0xc0022700c0)
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/resolver/resolver_with_discoverer.go:155 +0x45e fp=0xc001bfdfc8 sp=0xc001bfdc80 pc=0x545839e
+github.com/milvus-io/milvus/internal/util/streamingutil/service/resolver.newResolverWithDiscoverer.gowrap1()
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/resolver/resolver_with_discoverer.go:30 +0x25 fp=0xc001bfdfe0 sp=0xc001bfdfc8 pc=0x5457725
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001bfdfe8 sp=0xc001bfdfe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/util/streamingutil/service/resolver.newResolverWithDiscoverer in goroutine 1
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/resolver/resolver_with_discoverer.go:30 +0x167
+
+goroutine 224 gp=0xc001138700 m=nil [select]:
+runtime.gopark(0xc001ac3f78?, 0x2?, 0xe8?, 0xb3?, 0xc001ac3ef4?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001ac3d80 sp=0xc001ac3d60 pc=0x28c804e
+runtime.selectgo(0xc001ac3f78, 0xc001ac3ef0, 0x0?, 0x0, 0xc001ac3fa8?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001ac3eb8 sp=0xc001ac3d80 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*http2Client).keepalive(0xc001aec248)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1713 +0x18a fp=0xc001ac3fc8 sp=0xc001ac3eb8 pc=0x2f6f8aa
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap3()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:404 +0x25 fp=0xc001ac3fe0 sp=0xc001ac3fc8 pc=0x2f65365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001ac3fe8 sp=0xc001ac3fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 220
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:404 +0x1dfb
+
+goroutine 225 gp=0xc0011388c0 m=nil [runnable]:
+runtime.gopark(0x2f5a3e0?, 0xc001627f10?, 0x20?, 0xab?, 0xb?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00210ab20 sp=0xc00210ab00 pc=0x28c804e
+runtime.netpollblock(0x2934d18?, 0x2857ca6?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xc00210ab58 sp=0xc00210ab20 pc=0x2888c37
+internal/poll.runtime_pollWait(0x705a30c88b58, 0x72)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xc00210ab78 sp=0xc00210ab58 pc=0x28c6925
+internal/poll.(*pollDesc).wait(0xc00164f400?, 0xc001af0000?, 0x0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc00210aba0 sp=0xc00210ab78 pc=0x2958ce7
+internal/poll.(*pollDesc).waitRead(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc00164f400, {0xc001af0000, 0x8000, 0x8000})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_unix.go:165 +0x27a fp=0xc00210ac38 sp=0xc00210aba0 pc=0x295a11a
+net.(*netFD).Read(0xc00164f400, {0xc001af0000?, 0x705a3169aa78?, 0xc0011388c0?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/fd_posix.go:55 +0x25 fp=0xc00210ac80 sp=0xc00210ac38 pc=0x2bf1465
+net.(*conn).Read(0xc00157ee48, {0xc001af0000?, 0x28c4d99?, 0xc001138a80?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/net.go:194 +0x45 fp=0xc00210acc8 sp=0xc00210ac80 pc=0x2c041e5
+bufio.(*Reader).Read(0xc001accf00, {0xc001a64204, 0x9, 0x75bbc80?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0xc00210ad00 sp=0xc00210acc8 pc=0x2a00e97
+io.ReadAtLeast({0x837b440, 0xc001accf00}, {0xc001a64204, 0x9, 0x9}, 0x9)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:335 +0x91 fp=0xc00210ad48 sp=0xc00210ad00 pc=0x2925111
+io.ReadFull(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc001a64204, 0x9, 0x73b77a0?}, {0x837b440?, 0xc001accf00?})
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65 fp=0xc00210ad98 sp=0xc00210ad48 pc=0x2f1e745
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc001a641c0)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b fp=0xc00210ae20 sp=0xc00210ad98 pc=0x2f1f34b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc001a641c0)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18 fp=0xc00210ae60 sp=0xc00210ae20 pc=0x2f1fa98
+google.golang.org/grpc/internal/transport.(*http2Client).reader(0xc001aec248, 0xc001a55c00)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1640 +0x1d2 fp=0xc00210afc0 sp=0xc00210ae60 pc=0x2f6f032
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap4()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x25 fp=0xc00210afe0 sp=0xc00210afc0 pc=0x2f65305
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00210afe8 sp=0xc00210afe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 220
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x1e73
+
+goroutine 226 gp=0xc001138a80 m=nil [runnable]:
+runtime.gopark(0xc001aa5ed8?, 0x2?, 0xa9?, 0xb8?, 0xc001aa5eac?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001aa5d40 sp=0xc001aa5d20 pc=0x28c804e
+runtime.selectgo(0xc001aa5ed8, 0xc001aa5ea8, 0x2f7baf6?, 0x0, 0xc001af8000?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001aa5e78 sp=0xc001aa5d40 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc001627f00, 0x1)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:412 +0x108 fp=0xc001aa5f08 sp=0xc001aa5e78 pc=0x2f5a548
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc001438100)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:575 +0x78 fp=0xc001aa5f68 sp=0xc001aa5f08 pc=0x2f5ad18
+google.golang.org/grpc/internal/transport.NewHTTP2Client.func6()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:472 +0xd2 fp=0xc001aa5fe0 sp=0xc001aa5f68 pc=0x2f651f2
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001aa5fe8 sp=0xc001aa5fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 220
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:470 +0x2452
+
+goroutine 163 gp=0xc00127c540 m=nil [select]:
+runtime.gopark(0xc0000a37a0?, 0x2?, 0x0?, 0x0?, 0xc0000a3774?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0000a3608 sp=0xc0000a35e8 pc=0x28c804e
+runtime.selectgo(0xc0000a37a0, 0xc0000a3770, 0xc00103ce00?, 0x0, 0xc000084a80?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0000a3740 sp=0xc0000a3608 pc=0x28a3657
+context.(*cancelCtx).propagateCancel.func2()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/context/context.go:514 +0x98 fp=0xc0000a37e0 sp=0xc0000a3740 pc=0x298de98
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0000a37e8 sp=0xc0000a37e0 pc=0x28d0cc1
+created by context.(*cancelCtx).propagateCancel in goroutine 184
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/context/context.go:513 +0x3e6
+
+goroutine 164 gp=0xc00127c8c0 m=nil [select]:
+runtime.gopark(0xc00213de28?, 0x5?, 0x18?, 0xdb?, 0xc00213db76?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00213d9f0 sp=0xc00213d9d0 pc=0x28c804e
+runtime.selectgo(0xc00213de28, 0xc00213db6c, 0xc002132000?, 0x0, 0x6cd3300?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc00213db28 sp=0xc00213d9f0 pc=0x28a3657
+go.etcd.io/etcd/client/v3.(*watchGrpcStream).run(0xc001129110)
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:545 +0x374 fp=0xc00213dfc8 sp=0xc00213db28 pc=0x30f9474
+go.etcd.io/etcd/client/v3.(*watcher).newWatcherGrpcStream.gowrap1()
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:292 +0x25 fp=0xc00213dfe0 sp=0xc00213dfc8 pc=0x30f7dc5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00213dfe8 sp=0xc00213dfe0 pc=0x28d0cc1
+created by go.etcd.io/etcd/client/v3.(*watcher).newWatcherGrpcStream in goroutine 184
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:292 +0x2e5
+
+goroutine 167 gp=0xc00127cc40 m=nil [select]:
+runtime.gopark(0xc0014cf878?, 0x2?, 0x0?, 0x0?, 0xc0014cf874?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0014cf6f8 sp=0xc0014cf6d8 pc=0x28c804e
+runtime.selectgo(0xc0014cf878, 0xc0014cf870, 0xc0014c1890?, 0x0, 0x291c1cd?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0014cf830 sp=0xc0014cf6f8 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*recvBufferReader).readMessageHeaderClient(0xc0000ee190, {0xc002100610, 0x5, 0x5})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/transport.go:197 +0xa7 fp=0xc0014cf8e8 sp=0xc0014cf830 pc=0x2f7eb27
+google.golang.org/grpc/internal/transport.(*recvBufferReader).ReadMessageHeader(0xc0000ee190, {0xc002100610?, 0xc001aec248?, 0xc0000ee140?})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/transport.go:143 +0x45 fp=0xc0014cf918 sp=0xc0014cf8e8 pc=0x2f7e585
+google.golang.org/grpc/internal/transport.(*transportReader).ReadMessageHeader(0xc00210e0e0, {0xc002100610?, 0x8438e00?, 0xc0019b5570?})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/transport.go:417 +0x25 fp=0xc0014cf950 sp=0xc0014cf918 pc=0x2f7f745
+google.golang.org/grpc/internal/transport.(*Stream).ReadMessageHeader(0xc001b26240, {0xc002100610, 0x5, 0x5})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/transport.go:360 +0x9e fp=0xc0014cf9a8 sp=0xc0014cf950 pc=0x2f7f37e
+google.golang.org/grpc.(*parser).recvMsg(0xc002100600, 0x7fffffff)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/rpc_util.go:659 +0x3b fp=0xc0014cfa20 sp=0xc0014cf9a8 pc=0x2ff863b
+google.golang.org/grpc.recvAndDecompress(0xc002100600, {0x8378d40, 0xc0000ee140}, {0x0, 0x0}, 0x7fffffff, 0x0, {0x0, 0x0}, 0x0)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/rpc_util.go:819 +0x97 fp=0xc0014cfb10 sp=0xc0014cfa20 pc=0x2ff9617
+google.golang.org/grpc.recv(0x28cecf2?, {0x705a30cc9cf0, 0xbabf100}, {0x8378d40?, 0xc0000ee140?}, {0x0?, 0x0?}, {0x79070a0, 0xc0019ec850}, 0x7fffffff, ...)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/rpc_util.go:902 +0xab fp=0xc0014cfbc0 sp=0xc0014cfb10 pc=0x2ffa32b
+google.golang.org/grpc.(*csAttempt).recvMsg(0xc001129380, {0x79070a0, 0xc0019ec850}, 0x2?)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/stream.go:1127 +0x2e5 fp=0xc0014cfd40 sp=0xc0014cfbc0 pc=0x300f1c5
+google.golang.org/grpc.(*clientStream).RecvMsg.func1(0x0?)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/stream.go:970 +0x1f fp=0xc0014cfd70 sp=0xc0014cfd40 pc=0x300e2df
+google.golang.org/grpc.(*clientStream).withRetry(0xc00212e000, 0xc0014cfea8, 0xc0014cfe98)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/stream.go:774 +0x3b0 fp=0xc0014cfde0 sp=0xc0014cfd70 pc=0x300cd70
+google.golang.org/grpc.(*clientStream).RecvMsg(0xc00212e000, {0x79070a0?, 0xc0019ec850?})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/stream.go:969 +0x155 fp=0xc0014cfee0 sp=0xc0014cfde0 pc=0x300e0d5
+go.etcd.io/etcd/api/v3/etcdserverpb.(*watchWatchClient).Recv(0xc0021101d0)
+	/go/pkg/mod/go.etcd.io/etcd/api/v3@v3.5.23/etcdserverpb/rpc.pb.go:6714 +0x46 fp=0xc0014cff10 sp=0xc0014cfee0 pc=0x3042266
+go.etcd.io/etcd/client/v3.(*watchGrpcStream).serveWatchClient(0xc001129110, {0x83f1600, 0xc0021101d0})
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:766 +0x5c fp=0xc0014cffb8 sp=0xc0014cff10 pc=0x30fba5c
+go.etcd.io/etcd/client/v3.(*watchGrpcStream).newWatchClient.gowrap2()
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:921 +0x28 fp=0xc0014cffe0 sp=0xc0014cffb8 pc=0x30fc7c8
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0014cffe8 sp=0xc0014cffe0 pc=0x28d0cc1
+created by go.etcd.io/etcd/client/v3.(*watchGrpcStream).newWatchClient in goroutine 164
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:921 +0x565
+
+goroutine 166 gp=0xc00127ce00 m=nil [select]:
+runtime.gopark(0xc002273fa8?, 0x2?, 0x0?, 0x0?, 0xc002273f8c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002273e20 sp=0xc002273e00 pc=0x28c804e
+runtime.selectgo(0xc002273fa8, 0xc002273f88, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc002273f58 sp=0xc002273e20 pc=0x28a3657
+google.golang.org/grpc.newClientStreamWithParams.func4()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/stream.go:395 +0x8c fp=0xc002273fe0 sp=0xc002273f58 pc=0x300ad4c
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002273fe8 sp=0xc002273fe0 pc=0x28d0cc1
+created by google.golang.org/grpc.newClientStreamWithParams in goroutine 164
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/stream.go:394 +0xde9
+
+goroutine 168 gp=0xc00127cfc0 m=nil [select]:
+runtime.gopark(0xc001aa7e18?, 0x5?, 0xac?, 0xa8?, 0xc001aa7dde?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001aa7c58 sp=0xc001aa7c38 pc=0x28c804e
+runtime.selectgo(0xc001aa7e18, 0xc001aa7dd4, 0x0?, 0x1, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001aa7d90 sp=0xc001aa7c58 pc=0x28a3657
+go.etcd.io/etcd/client/v3.(*watchGrpcStream).serveSubstream(0xc001129110, 0xc002132000, 0xc0000842a0)
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:812 +0x219 fp=0xc001aa7fb8 sp=0xc001aa7d90 pc=0x30fbd99
+go.etcd.io/etcd/client/v3.(*watchGrpcStream).run.gowrap1()
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:562 +0x28 fp=0xc001aa7fe0 sp=0xc001aa7fb8 pc=0x30fb0c8
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001aa7fe8 sp=0xc001aa7fe0 pc=0x28d0cc1
+created by go.etcd.io/etcd/client/v3.(*watchGrpcStream).run in goroutine 164
+	/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.23/watch.go:562 +0xc59
+
+goroutine 229 gp=0xc001138c40 m=nil [select]:
+runtime.gopark(0xc002139ac8?, 0x2?, 0xb4?, 0xa4?, 0xc002139abc?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002139950 sp=0xc002139930 pc=0x28c804e
+runtime.selectgo(0xc002139ac8, 0xc002139ab8, 0xc00251a060?, 0x0, 0x2fedaa7?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc002139a88 sp=0xc002139950 pc=0x28a3657
+google.golang.org/grpc.(*ClientConn).WaitForStateChange(0xc0012bbc08, {0x83cc8b0, 0xc0019ec8c0}, 0x3)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/clientconn.go:659 +0xa7 fp=0xc002139af8 sp=0xc002139a88 pc=0x2fedd47
+google.golang.org/grpc.DialContext({0x83cc8b0, 0xc0019ec8c0}, {0x7ad9db5, 0x1a}, {0xc0014ad2c0, 0xa, 0x0?})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/clientconn.go:310 +0x525 fp=0xc002139c90 sp=0xc002139af8 pc=0x2febfe5
+github.com/milvus-io/milvus/internal/streamingcoord/client.NewClient.func1({0x83cc840?, 0xc001b2d7c0?})
+	/home/jenkins/agent/workspace/internal/streamingcoord/client/client.go:91 +0x8f fp=0xc002139d18 sp=0xc002139c90 pc=0x57eab8f
+github.com/milvus-io/milvus/internal/util/streamingutil/service/lazygrpc.(*connImpl).initialize.func1()
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/lazygrpc/conn.go:61 +0x39 fp=0xc002139df0 sp=0xc002139d18 pc=0x5470db9
+github.com/cenkalti/backoff/v4.RetryNotifyWithTimer.Operation.withEmptyData.func1()
+	/go/pkg/mod/github.com/cenkalti/backoff/v4@v4.2.1/retry.go:18 +0x13 fp=0xc002139e00 sp=0xc002139df0 pc=0x29a6653
+github.com/cenkalti/backoff/v4.doRetryNotify[...](0xc002139f28?, {0x83ac428, 0xc000062ae0}, 0x0, {0x0, 0x0?})
+	/go/pkg/mod/github.com/cenkalti/backoff/v4@v4.2.1/retry.go:88 +0x11c fp=0xc002139ef0 sp=0xc002139e00 pc=0x29a6a3c
+github.com/cenkalti/backoff/v4.RetryNotifyWithTimer(0x0?, {0x83ac428?, 0xc000062ae0?}, 0x0?, {0x0?, 0x0?})
+	/go/pkg/mod/github.com/cenkalti/backoff/v4@v4.2.1/retry.go:61 +0x56 fp=0xc002139f48 sp=0xc002139ef0 pc=0x29a65d6
+github.com/cenkalti/backoff/v4.RetryNotify(...)
+	/go/pkg/mod/github.com/cenkalti/backoff/v4@v4.2.1/retry.go:49
+github.com/cenkalti/backoff/v4.Retry(...)
+	/go/pkg/mod/github.com/cenkalti/backoff/v4@v4.2.1/retry.go:38
+github.com/milvus-io/milvus/internal/util/streamingutil/service/lazygrpc.(*connImpl).initialize(0xc0024ee438)
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/lazygrpc/conn.go:60 +0xf2 fp=0xc002139fc8 sp=0xc002139f48 pc=0x5470d32
+github.com/milvus-io/milvus/internal/util/streamingutil/service/lazygrpc.NewConn.gowrap1()
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/lazygrpc/conn.go:25 +0x25 fp=0xc002139fe0 sp=0xc002139fc8 pc=0x5470c05
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002139fe8 sp=0xc002139fe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/util/streamingutil/service/lazygrpc.NewConn in goroutine 1
+	/home/jenkins/agent/workspace/internal/util/streamingutil/service/lazygrpc/conn.go:25 +0xff
+
+goroutine 230 gp=0xc001138e00 m=nil [runnable]:
+github.com/milvus-io/milvus/pkg/v2/log.(*textEncoder).tryAddRuneSelf(0xc0014b2d00?, 0x70?)
+	/home/jenkins/agent/workspace/pkg/log/zap_text_encoder.go:595 +0x63f fp=0xc00210b968 sp=0xc00210b960 pc=0x3622dff
+github.com/milvus-io/milvus/pkg/v2/log.(*textEncoder).safeAddString(0xc0014b2d00, {0x7a8b6f2, 0xd})
+	/home/jenkins/agent/workspace/pkg/log/zap_text_encoder.go:536 +0x5d fp=0xc00210b9e8 sp=0xc00210b968 pc=0x362209d
+github.com/milvus-io/milvus/pkg/v2/log.(*textEncoder).safeAddStringWithQuote(0xc0014b2d00, {0x7a8b6f2?, 0xc001a58301?})
+	/home/jenkins/agent/workspace/pkg/log/zap_text_encoder.go:557 +0xdd fp=0xc00210ba48 sp=0xc00210b9e8 pc=0x36223fd
+github.com/milvus-io/milvus/pkg/v2/log.(*textEncoder).AppendString(0xc0014b2d01?, {0x7a8b6f2?, 0x9887d3b?})
+	/home/jenkins/agent/workspace/pkg/log/zap_text_encoder.go:318 +0xff fp=0xc00210baa0 sp=0xc00210ba48 pc=0x361fcbf
+github.com/milvus-io/milvus/pkg/v2/log.(*textEncoder).EncodeEntry(0xc002271240, {0x1, {0xc27c221f9cf3f575, 0x3a08857, 0xba5b500}, {0x0, 0x0}, {0x7a8b6f2, 0xd}, {0x1, ...}, ...}, ...)
+	/home/jenkins/agent/workspace/pkg/log/zap_text_encoder.go:462 +0x93f fp=0xc00210bc28 sp=0xc00210baa0 pc=0x362137f
+github.com/milvus-io/milvus/pkg/v2/log.(*asyncTextIOCore).Write(0xc0000630e0, {0x1, {0xc27c221f9cf3f575, 0x3a08857, 0xba5b500}, {0x0, 0x0}, {0x7a8b6f2, 0xd}, {0x1, ...}, ...}, ...)
+	/home/jenkins/agent/workspace/pkg/log/zap_async_buffered_write_core.go:116 +0x78 fp=0xc00210bce0 sp=0xc00210bc28 pc=0x361c8b8
+go.uber.org/zap/zapcore.(*CheckedEntry).Write(0xc00150e750, {0xc0014b2cc0, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:253 +0x119 fp=0xc00210be70 sp=0xc00210bce0 pc=0x30a7b99
+go.uber.org/zap.(*Logger).Warn(0x0?, {0x7a8b6f2?, 0x0?}, {0xc0014b2cc0, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:255 +0x4b fp=0xc00210bea0 sp=0xc00210be70 pc=0x30c4a8b
+github.com/milvus-io/milvus/internal/streamingcoord/client/assignment.(*AssignmentServiceImpl).resumeLoop.func1()
+	/home/jenkins/agent/workspace/internal/streamingcoord/client/assignment/assignment_impl.go:167 +0x145 fp=0xc00210bf70 sp=0xc00210bea0 pc=0x57e8545
+github.com/milvus-io/milvus/internal/streamingcoord/client/assignment.(*AssignmentServiceImpl).resumeLoop(0xc0024edce0)
+	/home/jenkins/agent/workspace/internal/streamingcoord/client/assignment/assignment_impl.go:178 +0xba fp=0xc00210bfc8 sp=0xc00210bf70 pc=0x57e83ba
+github.com/milvus-io/milvus/internal/streamingcoord/client/assignment.NewAssignmentService.gowrap1()
+	/home/jenkins/agent/workspace/internal/streamingcoord/client/assignment/assignment_impl.go:36 +0x25 fp=0xc00210bfe0 sp=0xc00210bfc8 pc=0x57e6fa5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00210bfe8 sp=0xc00210bfe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/streamingcoord/client/assignment.NewAssignmentService in goroutine 1
+	/home/jenkins/agent/workspace/internal/streamingcoord/client/assignment/assignment_impl.go:36 +0x2a7
+
+goroutine 234 gp=0xc001139500 m=nil [select]:
+runtime.gopark(0xc001abcf78?, 0x2?, 0xe8?, 0xb3?, 0xc001abcf3c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001abcdc8 sp=0xc001abcda8 pc=0x28c804e
+runtime.selectgo(0xc001abcf78, 0xc001abcf38, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001abcf00 sp=0xc001abcdc8 pc=0x28a3657
+github.com/panjf2000/ants/v2.(*poolCommon).purgeStaleWorkers(0xc002445d40)
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:253 +0xf2 fp=0xc001abcfc8 sp=0xc001abcf00 pc=0x5238c12
+github.com/panjf2000/ants/v2.(*poolCommon).goPurge.gowrap1()
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:317 +0x25 fp=0xc001abcfe0 sp=0xc001abcfc8 pc=0x5239145
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001abcfe8 sp=0xc001abcfe0 pc=0x28d0cc1
+created by github.com/panjf2000/ants/v2.(*poolCommon).goPurge in goroutine 1
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:317 +0xbc
+
+goroutine 235 gp=0xc0011396c0 m=nil [select]:
+runtime.gopark(0xc001abd778?, 0x2?, 0xe8?, 0xb3?, 0xc001abd73c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001abd5c8 sp=0xc001abd5a8 pc=0x28c804e
+runtime.selectgo(0xc001abd778, 0xc001abd738, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001abd700 sp=0xc001abd5c8 pc=0x28a3657
+github.com/panjf2000/ants/v2.(*poolCommon).ticktock(0xc002445d40)
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:296 +0x13a fp=0xc001abd7c8 sp=0xc001abd700 pc=0x5238f5a
+github.com/panjf2000/ants/v2.(*poolCommon).goTicktock.gowrap1()
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:323 +0x25 fp=0xc001abd7e0 sp=0xc001abd7c8 pc=0x52392c5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001abd7e8 sp=0xc001abd7e0 pc=0x28d0cc1
+created by github.com/panjf2000/ants/v2.(*poolCommon).goTicktock in goroutine 1
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:323 +0xf6
+
+goroutine 236 gp=0xc001139880 m=nil [select]:
+runtime.gopark(0xc0024f9f78?, 0x2?, 0xe8?, 0xb3?, 0xc0024f9f3c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0024f9dc8 sp=0xc0024f9da8 pc=0x28c804e
+runtime.selectgo(0xc0024f9f78, 0xc0024f9f38, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0024f9f00 sp=0xc0024f9dc8 pc=0x28a3657
+github.com/panjf2000/ants/v2.(*poolCommon).purgeStaleWorkers(0xc002445e10)
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:253 +0xf2 fp=0xc0024f9fc8 sp=0xc0024f9f00 pc=0x5238c12
+github.com/panjf2000/ants/v2.(*poolCommon).goPurge.gowrap1()
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:317 +0x25 fp=0xc0024f9fe0 sp=0xc0024f9fc8 pc=0x5239145
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0024f9fe8 sp=0xc0024f9fe0 pc=0x28d0cc1
+created by github.com/panjf2000/ants/v2.(*poolCommon).goPurge in goroutine 1
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:317 +0xbc
+
+goroutine 237 gp=0xc001139a40 m=nil [select]:
+runtime.gopark(0xc0024fa778?, 0x2?, 0xe8?, 0xb3?, 0xc0024fa73c?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0024fa5c8 sp=0xc0024fa5a8 pc=0x28c804e
+runtime.selectgo(0xc0024fa778, 0xc0024fa738, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0024fa700 sp=0xc0024fa5c8 pc=0x28a3657
+github.com/panjf2000/ants/v2.(*poolCommon).ticktock(0xc002445e10)
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:296 +0x13a fp=0xc0024fa7c8 sp=0xc0024fa700 pc=0x5238f5a
+github.com/panjf2000/ants/v2.(*poolCommon).goTicktock.gowrap1()
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:323 +0x25 fp=0xc0024fa7e0 sp=0xc0024fa7c8 pc=0x52392c5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0024fa7e8 sp=0xc0024fa7e0 pc=0x28d0cc1
+created by github.com/panjf2000/ants/v2.(*poolCommon).goTicktock in goroutine 1
+	/go/pkg/mod/github.com/panjf2000/ants/v2@v2.11.3/ants.go:323 +0xf6
+
+goroutine 242 gp=0xc00094ac40 m=nil [select]:
+runtime.gopark(0xc002278760?, 0x2?, 0xd3?, 0xac?, 0xc002278724?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0022785b0 sp=0xc002278590 pc=0x28c804e
+runtime.selectgo(0xc002278760, 0xc002278720, 0xc002278728?, 0x0, 0xc000062ae0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0022786e8 sp=0xc0022785b0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0019b5810, {0x83cc840, 0xc001505a90})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc0022787b8 sp=0xc0022786e8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc0022787e0 sp=0xc0022787b8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0022787e8 sp=0xc0022787e0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 229
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 243 gp=0xc00094ae00 m=nil [select]:
+runtime.gopark(0xc001aa6f60?, 0x2?, 0xa8?, 0x49?, 0xc001aa6f24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001aa6db0 sp=0xc001aa6d90 pc=0x28c804e
+runtime.selectgo(0xc001aa6f60, 0xc001aa6f20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001aa6ee8 sp=0xc001aa6db0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0019b5840, {0x83cc840, 0xc001505b30})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc001aa6fb8 sp=0xc001aa6ee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc001aa6fe0 sp=0xc001aa6fb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001aa6fe8 sp=0xc001aa6fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 229
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 244 gp=0xc00094afc0 m=nil [select]:
+runtime.gopark(0xc00006ff60?, 0x2?, 0xdf?, 0x33?, 0xc00006ff24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00006fdb0 sp=0xc00006fd90 pc=0x28c804e
+runtime.selectgo(0xc00006ff60, 0xc00006ff20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc00006fee8 sp=0xc00006fdb0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0019b5870, {0x83cc840, 0xc001505b80})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc00006ffb8 sp=0xc00006fee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc00006ffe0 sp=0xc00006ffb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00006ffe8 sp=0xc00006ffe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 229
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 349 gp=0xc001139dc0 m=nil [select]:
+runtime.gopark(0xc0024faf60?, 0x2?, 0x28?, 0xae?, 0xc0024faf24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0024fadb0 sp=0xc0024fad90 pc=0x28c804e
+runtime.selectgo(0xc0024faf60, 0xc0024faf20, 0xc000fe5e60?, 0x0, 0xc0024faf40?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0024faee8 sp=0xc0024fadb0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0024f1020, {0x83cc840, 0xc001412730})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc0024fafb8 sp=0xc0024faee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc0024fafe0 sp=0xc0024fafb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0024fafe8 sp=0xc0024fafe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 238
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 350 gp=0xc0009828c0 m=nil [select]:
+runtime.gopark(0xc0014cbf60?, 0x2?, 0xe0?, 0x59?, 0xc0014cbf24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0014cbdb0 sp=0xc0014cbd90 pc=0x28c804e
+runtime.selectgo(0xc0014cbf60, 0xc0014cbf20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0014cbee8 sp=0xc0014cbdb0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0024f1050, {0x83cc840, 0xc001412af0})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc0014cbfb8 sp=0xc0014cbee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc0014cbfe0 sp=0xc0014cbfb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0014cbfe8 sp=0xc0014cbfe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 238
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 351 gp=0xc000983340 m=nil [select]:
+runtime.gopark(0xc001ae7f60?, 0x2?, 0xe5?, 0x78?, 0xc001ae7f24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001ae7db0 sp=0xc001ae7d90 pc=0x28c804e
+runtime.selectgo(0xc001ae7f60, 0xc001ae7f20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001ae7ee8 sp=0xc001ae7db0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0024f1080, {0x83cc840, 0xc001412b40})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc001ae7fb8 sp=0xc001ae7ee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc001ae7fe0 sp=0xc001ae7fb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001ae7fe8 sp=0xc001ae7fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 238
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 354 gp=0xc0025b4000 m=nil [chan receive]:
+runtime.gopark(0xdbfcf06f98dd8?, 0x2000000028c4d79?, 0x18?, 0xb7?, 0x705a3169a5c0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0025d1b80 sp=0xc0025d1b60 pc=0x28c804e
+runtime.chanrecv(0xc0025962a0, 0xc0025d1df8, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/chan.go:664 +0x445 fp=0xc0025d1bf8 sp=0xc0025d1b80 pc=0x285b2a5
+runtime.chanrecv1(0xc002580450?, 0x7b354e1?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/chan.go:506 +0x12 fp=0xc0025d1c20 sp=0xc0025d1bf8 pc=0x285ae32
+github.com/milvus-io/milvus/internal/distributed/querynode.(*Server).init(0xc002584120)
+	/home/jenkins/agent/workspace/internal/distributed/querynode/service.go:138 +0x625 fp=0xc0025d1e18 sp=0xc0025d1c20 pc=0x689a805
+github.com/milvus-io/milvus/internal/distributed/querynode.(*Server).Run(0xc002584120)
+	/home/jenkins/agent/workspace/internal/distributed/querynode/service.go:228 +0x1c fp=0xc0025d1e58 sp=0xc0025d1e18 pc=0x689c45c
+github.com/milvus-io/milvus/cmd/components.(*QueryNode).Run(0xc0025a0168)
+	/home/jenkins/agent/workspace/cmd/components/query_node.go:59 +0x2b fp=0xc0025d1f38 sp=0xc0025d1e58 pc=0x691adcb
+github.com/milvus-io/milvus/cmd/roles.runComponent[...].func1()
+	/home/jenkins/agent/workspace/cmd/roles/roles.go:139 +0x9a fp=0xc0025d1fc0 sp=0xc0025d1f38 pc=0x692667a
+github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...].func1()
+	/home/jenkins/agent/workspace/pkg/util/conc/future.go:96 +0x23 fp=0xc0025d1fe0 sp=0xc0025d1fc0 pc=0x6926ba3
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0025d1fe8 sp=0xc0025d1fe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...] in goroutine 1
+	/home/jenkins/agent/workspace/pkg/util/conc/future.go:95 +0xe5
+
+goroutine 189 gp=0xc000983500 m=nil [select]:
+runtime.gopark(0xc002279778?, 0x2?, 0xa0?, 0xb8?, 0xc0022796f4?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002279580 sp=0xc002279560 pc=0x28c804e
+runtime.selectgo(0xc002279778, 0xc0022796f0, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0022796b8 sp=0xc002279580 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*http2Client).keepalive(0xc00218e488)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1713 +0x18a fp=0xc0022797c8 sp=0xc0022796b8 pc=0x2f6f8aa
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap3()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:404 +0x25 fp=0xc0022797e0 sp=0xc0022797c8 pc=0x2f65365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0022797e8 sp=0xc0022797e0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 446
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:404 +0x1dfb
+
+goroutine 192 gp=0xc0009836c0 m=nil [runnable]:
+runtime.asyncPreempt2()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/preempt.go:308 +0x39 fp=0xc001ae90d0 sp=0xc001ae90b0 pc=0x288f2d9
+runtime.asyncPreempt()
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/preempt_amd64.s:46 +0xdb fp=0xc001ae9258 sp=0xc001ae90d0 pc=0x28d227b
+github.com/minio/minio-go/v7.ErrorResponse.Error({{{0x0, 0x0}, {0x0, 0x0}}, {0x7a93e8f, 0xf}, {0xc00219f280, 0x3f}, {0x0, 0x0}, ...})
+	/go/pkg/mod/github.com/minio/minio-go/v7@v7.0.73/api-error-response.go:88 fp=0xc001ae9260 sp=0xc001ae9258 pc=0x433c8e0
+github.com/minio/minio-go/v7.(*ErrorResponse).Error(0xb721940?)
+	<autogenerated>:1 +0x98 fp=0xc001ae93e0 sp=0xc001ae9260 pc=0x43885d8
+fmt.(*pp).handleMethods(0xc00150fd40, 0x1a675c0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/fmt/print.go:667 +0x3e3 fp=0xc001ae95a0 sp=0xc001ae93e0 pc=0x2978603
+fmt.(*pp).printArg(0xc00150fd40, {0x78c2f60, 0xc001179c80}, 0x76)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/fmt/print.go:756 +0x438 fp=0xc001ae9638 sp=0xc001ae95a0 pc=0x2978e38
+fmt.(*pp).doPrintf(0xc00150fd40, {0x7a6b2af, 0x6}, {0xc001ae97a0, 0x2, 0x2})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/fmt/print.go:1074 +0x37e fp=0xc001ae9720 sp=0xc001ae9638 pc=0x297b8be
+fmt.Sprintf({0x7a6b2af, 0x6}, {0xc001ae97a0, 0x2, 0x2})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/fmt/print.go:239 +0x53 fp=0xc001ae9778 sp=0xc001ae9720 pc=0x2975a33
+github.com/cockroachdb/errors/errutil.(*withPrefix).Error(0xc002181e00)
+	/go/pkg/mod/github.com/cockroachdb/errors@v1.9.1/errutil/redactable.go:72 +0x97 fp=0xc001ae97d0 sp=0xc001ae9778 pc=0x2d95e17
+github.com/cockroachdb/errors/withstack.(*withStack).Error(0xb7226e0?)
+	/go/pkg/mod/github.com/cockroachdb/errors@v1.9.1/withstack/withstack.go:64 +0x1b fp=0xc001ae97e8 sp=0xc001ae97d0 pc=0x2d9391b
+github.com/milvus-io/milvus/pkg/v2/log.(*textEncoder).encodeError(0xc00205cb00, {{0x7a641c1, 0x5}, 0x1a, 0x0, {0x0, 0x0}, {0x75671e0, 0xc0021ec2e8}})
+	/home/jenkins/agent/workspace/pkg/log/zap_text_encoder.go:650 +0xd4 fp=0xc001ae98c8 sp=0xc001ae97e8 pc=0x36232b4
+github.com/milvus-io/milvus/pkg/v2/log.(*textEncoder).addFields(0xc00205cb00, {0xc0021dc1c0?, 0x98a7c74?, 0x4b?})
+	/home/jenkins/agent/workspace/pkg/log/zap_text_encoder.go:639 +0x28d fp=0xc001ae9990 sp=0xc001ae98c8 pc=0x362318d
+github.com/milvus-io/milvus/pkg/v2/log.(*textEncoder).EncodeEntry(0xc0016274c0, {0x2, {0xc27c221f9cf309d9, 0x39f9cb9, 0xba5b500}, {0x0, 0x0}, {0x7ad2aed, 0x19}, {0x1, ...}, ...}, ...)
+	/home/jenkins/agent/workspace/pkg/log/zap_text_encoder.go:469 +0xb25 fp=0xc001ae9b18 sp=0xc001ae9990 pc=0x3621565
+github.com/milvus-io/milvus/pkg/v2/log.(*asyncTextIOCore).Write(0xc0014b1980, {0x2, {0xc27c221f9cf309d9, 0x39f9cb9, 0xba5b500}, {0x0, 0x0}, {0x7ad2aed, 0x19}, {0x1, ...}, ...}, ...)
+	/home/jenkins/agent/workspace/pkg/log/zap_async_buffered_write_core.go:116 +0x78 fp=0xc001ae9bd0 sp=0xc001ae9b18 pc=0x361c8b8
+go.uber.org/zap/zapcore.(*CheckedEntry).Write(0xc0014a0680, {0xc0021dc1c0, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/zapcore/entry.go:253 +0x119 fp=0xc001ae9d60 sp=0xc001ae9bd0 pc=0x30a7b99
+go.uber.org/zap.(*Logger).Error(0x2d93897?, {0x7ad2aed?, 0xc001ae9dc8?}, {0xc0021dc1c0, 0x1, 0x1})
+	/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:263 +0x4b fp=0xc001ae9d90 sp=0xc001ae9d60 pc=0x30c4b2b
+github.com/milvus-io/milvus/internal/distributed/streamingnode.(*Server).init.func1()
+	/home/jenkins/agent/workspace/internal/distributed/streamingnode/service.go:205 +0x13c fp=0xc001ae9e60 sp=0xc001ae9d90 pc=0x69173bc
+github.com/milvus-io/milvus/internal/distributed/streamingnode.(*Server).init(0xc002192960)
+	/home/jenkins/agent/workspace/internal/distributed/streamingnode/service.go:218 +0x234 fp=0xc001ae9ef8 sp=0xc001ae9e60 pc=0x69171f4
+github.com/milvus-io/milvus/internal/distributed/streamingnode.(*Server).Run(0xc002192960)
+	/home/jenkins/agent/workspace/internal/distributed/streamingnode/service.go:125 +0x1c fp=0xc001ae9f38 sp=0xc001ae9ef8 pc=0x691669c
+github.com/milvus-io/milvus/cmd/roles.runComponent[...].func1()
+	/home/jenkins/agent/workspace/cmd/roles/roles.go:139 +0x9a fp=0xc001ae9fc0 sp=0xc001ae9f38 pc=0x692667a
+github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...].func1()
+	/home/jenkins/agent/workspace/pkg/util/conc/future.go:96 +0x23 fp=0xc001ae9fe0 sp=0xc001ae9fc0 pc=0x6926ba3
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001ae9fe8 sp=0xc001ae9fe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...] in goroutine 1
+	/home/jenkins/agent/workspace/pkg/util/conc/future.go:95 +0xe5
+
+goroutine 443 gp=0xc0025b41c0 m=nil [select]:
+runtime.gopark(0xc002274760?, 0x2?, 0xa0?, 0x80?, 0xc002274724?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0022745b0 sp=0xc002274590 pc=0x28c804e
+runtime.selectgo(0xc002274760, 0xc002274720, 0xdbfcf06de8212?, 0x0, 0xc001129110?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0022746e8 sp=0xc0022745b0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0025808e0, {0x83cc840, 0xc000fc99f0})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc0022747b8 sp=0xc0022746e8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc0022747e0 sp=0xc0022747b8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0022747e8 sp=0xc0022747e0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 354
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 372 gp=0xc00262a000 m=nil [select]:
+runtime.gopark(0xc0024fb778?, 0x2?, 0x8?, 0xa1?, 0xc0024fb6f4?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0024fb580 sp=0xc0024fb560 pc=0x28c804e
+runtime.selectgo(0xc0024fb778, 0xc0024fb6f0, 0x0?, 0x0, 0xc0024fb7a8?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0024fb6b8 sp=0xc0024fb580 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*http2Client).keepalive(0xc001aec6c8)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1713 +0x18a fp=0xc0024fb7c8 sp=0xc0024fb6b8 pc=0x2f6f8aa
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap3()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:404 +0x25 fp=0xc0024fb7e0 sp=0xc0024fb7c8 pc=0x2f65365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0024fb7e8 sp=0xc0024fb7e0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 352
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:404 +0x1dfb
+
+goroutine 373 gp=0xc00262a1c0 m=nil [IO wait]:
+runtime.gopark(0xffffffffffffffff?, 0xe?, 0x0?, 0x0?, 0xb?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002106b20 sp=0xc002106b00 pc=0x28c804e
+runtime.netpollblock(0x2934d18?, 0x2857ca6?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xc002106b58 sp=0xc002106b20 pc=0x2888c37
+internal/poll.runtime_pollWait(0x705a30c88810, 0x72)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xc002106b78 sp=0xc002106b58 pc=0x28c6925
+internal/poll.(*pollDesc).wait(0xc0023ffa00?, 0xc00261a000?, 0x0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc002106ba0 sp=0xc002106b78 pc=0x2958ce7
+internal/poll.(*pollDesc).waitRead(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc0023ffa00, {0xc00261a000, 0x8000, 0x8000})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_unix.go:165 +0x27a fp=0xc002106c38 sp=0xc002106ba0 pc=0x295a11a
+net.(*netFD).Read(0xc0023ffa00, {0xc00261a000?, 0x0?, 0x5000000024f1540?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/fd_posix.go:55 +0x25 fp=0xc002106c80 sp=0xc002106c38 pc=0x2bf1465
+net.(*conn).Read(0xc00110e3d0, {0xc00261a000?, 0x28?, 0x75bbe00?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/net.go:194 +0x45 fp=0xc002106cc8 sp=0xc002106c80 pc=0x2c041e5
+bufio.(*Reader).Read(0xc0024fe360, {0xc001a64ac4, 0x9, 0xc001312001?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0xc002106d00 sp=0xc002106cc8 pc=0x2a00e97
+io.ReadAtLeast({0x837b440, 0xc0024fe360}, {0xc001a64ac4, 0x9, 0x9}, 0x9)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:335 +0x91 fp=0xc002106d48 sp=0xc002106d00 pc=0x2925111
+io.ReadFull(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc001a64ac4, 0x9, 0xc000000000?}, {0x837b440?, 0xc0024fe360?})
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65 fp=0xc002106d98 sp=0xc002106d48 pc=0x2f1e745
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc001a64a80)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b fp=0xc002106e20 sp=0xc002106d98 pc=0x2f1f34b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc001a64a80)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18 fp=0xc002106e60 sp=0xc002106e20 pc=0x2f1fa98
+google.golang.org/grpc/internal/transport.(*http2Client).reader(0xc001aec6c8, 0xc001270e00)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1640 +0x1d2 fp=0xc002106fc0 sp=0xc002106e60 pc=0x2f6f032
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap4()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x25 fp=0xc002106fe0 sp=0xc002106fc0 pc=0x2f65305
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002106fe8 sp=0xc002106fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 352
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x1e73
+
+goroutine 197 gp=0xc00131f6c0 m=nil [select]:
+runtime.gopark(0xc001abe6d8?, 0x2?, 0xa9?, 0xb8?, 0xc001abe6ac?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc001abe540 sp=0xc001abe520 pc=0x28c804e
+runtime.selectgo(0xc001abe6d8, 0xc001abe6a8, 0x2f7baf6?, 0x0, 0xc002622000?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc001abe678 sp=0xc001abe540 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc0022716c0, 0x1)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:412 +0x108 fp=0xc001abe708 sp=0xc001abe678 pc=0x2f5a548
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc0010f3180)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:575 +0x78 fp=0xc001abe768 sp=0xc001abe708 pc=0x2f5ad18
+google.golang.org/grpc/internal/transport.NewHTTP2Client.func6()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:472 +0xd2 fp=0xc001abe7e0 sp=0xc001abe768 pc=0x2f651f2
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc001abe7e8 sp=0xc001abe7e0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 352
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:470 +0x2452
+
+goroutine 374 gp=0xc00262a380 m=nil [chan receive]:
+runtime.gopark(0xdbfcf0706c7f7?, 0x200000000000000?, 0x58?, 0xd6?, 0x705a3169aa78?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0025cdb68 sp=0xc0025cdb48 pc=0x28c804e
+runtime.chanrecv(0xc002618460, 0xc0025cdc18, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/chan.go:664 +0x445 fp=0xc0025cdbe0 sp=0xc0025cdb68 pc=0x285b2a5
+runtime.chanrecv1(0xc001beadd0?, 0xc00263a2c0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/chan.go:506 +0x12 fp=0xc0025cdc08 sp=0xc0025cdbe0 pc=0x285ae32
+github.com/milvus-io/milvus/internal/distributed/datanode.(*Server).startGrpc(0xc001270e70)
+	/home/jenkins/agent/workspace/internal/distributed/datanode/service.go:103 +0x7e fp=0xc0025cdc38 sp=0xc0025cdc08 pc=0x5e4e87e
+github.com/milvus-io/milvus/internal/distributed/datanode.(*Server).init(0xc001270e70)
+	/home/jenkins/agent/workspace/internal/distributed/datanode/service.go:242 +0x526 fp=0xc0025cde18 sp=0xc0025cdc38 pc=0x5e50b46
+github.com/milvus-io/milvus/internal/distributed/datanode.(*Server).Run(0xc001270e70)
+	/home/jenkins/agent/workspace/internal/distributed/datanode/service.go:170 +0x1c fp=0xc0025cde58 sp=0xc0025cde18 pc=0x5e4fefc
+github.com/milvus-io/milvus/cmd/components.(*DataNode).Run(0xc0024ef080)
+	/home/jenkins/agent/workspace/cmd/components/data_node.go:59 +0x2b fp=0xc0025cdf38 sp=0xc0025cde58 pc=0x6919feb
+github.com/milvus-io/milvus/cmd/roles.runComponent[...].func1()
+	/home/jenkins/agent/workspace/cmd/roles/roles.go:139 +0x9a fp=0xc0025cdfc0 sp=0xc0025cdf38 pc=0x692667a
+github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...].func1()
+	/home/jenkins/agent/workspace/pkg/util/conc/future.go:96 +0x23 fp=0xc0025cdfe0 sp=0xc0025cdfc0 pc=0x6926ba3
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0025cdfe8 sp=0xc0025cdfe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/pkg/v2/util/conc.Go[...] in goroutine 1
+	/home/jenkins/agent/workspace/pkg/util/conc/future.go:95 +0xe5
+
+goroutine 444 gp=0xc0025b4380 m=nil [select]:
+runtime.gopark(0xc00006df60?, 0x2?, 0xe0?, 0x59?, 0xc00006df24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00006ddb0 sp=0xc00006dd90 pc=0x28c804e
+runtime.selectgo(0xc00006df60, 0xc00006df20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc00006dee8 sp=0xc00006ddb0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc002580910, {0x83cc840, 0xc000fc9a40})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc00006dfb8 sp=0xc00006dee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc00006dfe0 sp=0xc00006dfb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00006dfe8 sp=0xc00006dfe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 354
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 445 gp=0xc0025b4540 m=nil [select]:
+runtime.gopark(0xc002613f60?, 0x2?, 0xe5?, 0x78?, 0xc002613f24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002613db0 sp=0xc002613d90 pc=0x28c804e
+runtime.selectgo(0xc002613f60, 0xc002613f20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc002613ee8 sp=0xc002613db0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc002580940, {0x83cc840, 0xc000fc9a90})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc002613fb8 sp=0xc002613ee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc002613fe0 sp=0xc002613fb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002613fe8 sp=0xc002613fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 354
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 469 gp=0xc00262a540 m=nil [select]:
+runtime.gopark(0xc002272f60?, 0x2?, 0xc5?, 0x39?, 0xc002272f24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002272db0 sp=0xc002272d90 pc=0x28c804e
+runtime.selectgo(0xc002272f60, 0xc002272f20, 0xdbfcf06ed114a?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc002272ee8 sp=0xc002272db0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0024f1c20, {0x83cc840, 0xc001413e00})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc002272fb8 sp=0xc002272ee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc002272fe0 sp=0xc002272fb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002272fe8 sp=0xc002272fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 374
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 473 gp=0xc0025b4700 m=nil [select]:
+runtime.gopark(0xc00023aed8?, 0x2?, 0xa9?, 0xb8?, 0xc00023aeac?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00023ad40 sp=0xc00023ad20 pc=0x28c804e
+runtime.selectgo(0xc00023aed8, 0xc00023aea8, 0x2f7baf6?, 0x0, 0xc0025f2000?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc00023ae78 sp=0xc00023ad40 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc002582e00, 0x1)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:412 +0x108 fp=0xc00023af08 sp=0xc00023ae78 pc=0x2f5a548
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc0012d7c80)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:575 +0x78 fp=0xc00023af68 sp=0xc00023af08 pc=0x2f5ad18
+google.golang.org/grpc/internal/transport.NewHTTP2Client.func6()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:472 +0xd2 fp=0xc00023afe0 sp=0xc00023af68 pc=0x2f651f2
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00023afe8 sp=0xc00023afe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 472
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:470 +0x2452
+
+goroutine 247 gp=0xc0025b48c0 m=nil [IO wait]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002615a00 sp=0xc0026159e0 pc=0x28c804e
+runtime.netpollblock(0x2862f94?, 0x2857ca6?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xc002615a38 sp=0xc002615a00 pc=0x2888c37
+internal/poll.runtime_pollWait(0x705a30c88928, 0x72)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xc002615a58 sp=0xc002615a38 pc=0x28c6925
+internal/poll.(*pollDesc).wait(0xc00259cc80?, 0xc002520280?, 0x0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc002615a80 sp=0xc002615a58 pc=0x2958ce7
+internal/poll.(*pollDesc).waitRead(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc00259cc80)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_unix.go:620 +0x295 fp=0xc002615b28 sp=0xc002615a80 pc=0x295e1f5
+net.(*netFD).accept(0xc00259cc80)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/fd_unix.go:172 +0x29 fp=0xc002615be0 sp=0xc002615b28 pc=0x2bf3449
+net.(*TCPListener).accept(0xc002582740)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/tcpsock_posix.go:159 +0x1b fp=0xc002615c30 sp=0xc002615be0 pc=0x2c0e1fb
+net.(*TCPListener).Accept(0xc002582740)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/tcpsock.go:380 +0x30 fp=0xc002615c60 sp=0xc002615c30 pc=0x2c0d210
+github.com/milvus-io/milvus/pkg/v2/util/netutil.(*NetListener).Accept(0x843a8c0?)
+	<autogenerated>:1 +0x24 fp=0xc002615c78 sp=0xc002615c60 pc=0x5e4dda4
+google.golang.org/grpc.(*Server).Serve(0xc001a68200, {0x83bd210, 0xc00259a900})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/server.go:890 +0x473 fp=0xc002615dd8 sp=0xc002615c78 pc=0x2ffd673
+github.com/milvus-io/milvus/internal/distributed/querynode.(*Server).startGrpcLoop(0xc002584120)
+	/home/jenkins/agent/workspace/internal/distributed/querynode/service.go:220 +0x87b fp=0xc002615fc8 sp=0xc002615dd8 pc=0x689b75b
+github.com/milvus-io/milvus/internal/distributed/querynode.(*Server).init.gowrap1()
+	/home/jenkins/agent/workspace/internal/distributed/querynode/service.go:136 +0x25 fp=0xc002615fe0 sp=0xc002615fc8 pc=0x689ab85
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002615fe8 sp=0xc002615fe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/distributed/querynode.(*Server).init in goroutine 354
+	/home/jenkins/agent/workspace/internal/distributed/querynode/service.go:136 +0x5ff
+
+goroutine 200 gp=0xc00131fc00 m=nil [select]:
+runtime.gopark(0xc0024fbf08?, 0x2?, 0xa0?, 0xb8?, 0xc0024fbe94?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0024fbd20 sp=0xc0024fbd00 pc=0x28c804e
+runtime.selectgo(0xc0024fbf08, 0xc0024fbe90, 0x69267be?, 0x0, 0xc001b2c410?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0024fbe58 sp=0xc0024fbd20 pc=0x28a3657
+github.com/milvus-io/milvus/pkg/v2/util/resource.(*manager).backgroundGC(0xc0012e4c60)
+	/home/jenkins/agent/workspace/pkg/util/resource/resource_manager.go:182 +0x10b fp=0xc0024fbfc8 sp=0xc0024fbe58 pc=0x64fd08b
+github.com/milvus-io/milvus/pkg/v2/util/resource.NewManager.gowrap1()
+	/home/jenkins/agent/workspace/pkg/util/resource/resource_manager.go:173 +0x25 fp=0xc0024fbfe0 sp=0xc0024fbfc8 pc=0x64fcf45
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0024fbfe8 sp=0xc0024fbfe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/pkg/v2/util/resource.NewManager in goroutine 199
+	/home/jenkins/agent/workspace/pkg/util/resource/resource_manager.go:173 +0x116
+
+goroutine 190 gp=0xc000185dc0 m=nil [IO wait]:
+runtime.gopark(0xffffffffffffffff?, 0x10?, 0x0?, 0x0?, 0xb?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002107b20 sp=0xc002107b00 pc=0x28c804e
+runtime.netpollblock(0x2934d18?, 0x2857ca6?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xc002107b58 sp=0xc002107b20 pc=0x2888c37
+internal/poll.runtime_pollWait(0x705a30c885e0, 0x72)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xc002107b78 sp=0xc002107b58 pc=0x28c6925
+internal/poll.(*pollDesc).wait(0xc00259d200?, 0xc0021a4000?, 0x0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc002107ba0 sp=0xc002107b78 pc=0x2958ce7
+internal/poll.(*pollDesc).waitRead(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc00259d200, {0xc0021a4000, 0x8000, 0x8000})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_unix.go:165 +0x27a fp=0xc002107c38 sp=0xc002107ba0 pc=0x295a11a
+net.(*netFD).Read(0xc00259d200, {0xc0021a4000?, 0x0?, 0x50000000205bf70?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/fd_posix.go:55 +0x25 fp=0xc002107c80 sp=0xc002107c38 pc=0x2bf1465
+net.(*conn).Read(0xc00001a8a0, {0xc0021a4000?, 0x28?, 0x75bbe00?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/net.go:194 +0x45 fp=0xc002107cc8 sp=0xc002107c80 pc=0x2c041e5
+bufio.(*Reader).Read(0xc002075c80, {0xc0010fa204, 0x9, 0xc000196801?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0xc002107d00 sp=0xc002107cc8 pc=0x2a00e97
+io.ReadAtLeast({0x837b440, 0xc002075c80}, {0xc0010fa204, 0x9, 0x9}, 0x9)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:335 +0x91 fp=0xc002107d48 sp=0xc002107d00 pc=0x2925111
+io.ReadFull(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc0010fa204, 0x9, 0xc000000000?}, {0x837b440?, 0xc002075c80?})
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65 fp=0xc002107d98 sp=0xc002107d48 pc=0x2f1e745
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc0010fa1c0)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b fp=0xc002107e20 sp=0xc002107d98 pc=0x2f1f34b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc0010fa1c0)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18 fp=0xc002107e60 sp=0xc002107e20 pc=0x2f1fa98
+google.golang.org/grpc/internal/transport.(*http2Client).reader(0xc00218e488, 0xc001148620)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1640 +0x1d2 fp=0xc002107fc0 sp=0xc002107e60 pc=0x2f6f032
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap4()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x25 fp=0xc002107fe0 sp=0xc002107fc0 pc=0x2f65305
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002107fe8 sp=0xc002107fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 446
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x1e73
+
+goroutine 470 gp=0xc00262a700 m=nil [select]:
+runtime.gopark(0xc002617f60?, 0x2?, 0xe0?, 0x59?, 0xc002617f24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002617db0 sp=0xc002617d90 pc=0x28c804e
+runtime.selectgo(0xc002617f60, 0xc002617f20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc002617ee8 sp=0xc002617db0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0024f1c50, {0x83cc840, 0xc001413e50})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc002617fb8 sp=0xc002617ee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc002617fe0 sp=0xc002617fb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002617fe8 sp=0xc002617fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 374
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 471 gp=0xc00262a8c0 m=nil [select]:
+runtime.gopark(0xc000069f60?, 0x2?, 0xe5?, 0x78?, 0xc000069f24?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc000069db0 sp=0xc000069d90 pc=0x28c804e
+runtime.selectgo(0xc000069f60, 0xc000069f20, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc000069ee8 sp=0xc000069db0 pc=0x28a3657
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0024f1c80, {0x83cc840, 0xc001413ea0})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:88 +0x10c fp=0xc000069fb8 sp=0xc000069ee8 pc=0x2ee17ac
+google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer.gowrap1()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x28 fp=0xc000069fe0 sp=0xc000069fb8 pc=0x2ee1588
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc000069fe8 sp=0xc000069fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 374
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 245 gp=0xc00094b180 m=nil [select]:
+runtime.gopark(0xc00023b6d8?, 0x2?, 0xa9?, 0xb8?, 0xc00023b6ac?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc00023b540 sp=0xc00023b520 pc=0x28c804e
+runtime.selectgo(0xc00023b6d8, 0xc00023b6a8, 0x2f7baf6?, 0x0, 0xc0021ac000?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc00023b678 sp=0xc00023b540 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc00205d0c0, 0x1)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:412 +0x108 fp=0xc00023b708 sp=0xc00023b678 pc=0x2f5a548
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc00259d380)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/controlbuf.go:575 +0x78 fp=0xc00023b768 sp=0xc00023b708 pc=0x2f5ad18
+google.golang.org/grpc/internal/transport.NewHTTP2Client.func6()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:472 +0xd2 fp=0xc00023b7e0 sp=0xc00023b768 pc=0x2f651f2
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00023b7e8 sp=0xc00023b7e0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 446
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:470 +0x2452
+
+goroutine 475 gp=0xc0025b4a80 m=nil [IO wait]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0025e7a00 sp=0xc0025e79e0 pc=0x28c804e
+runtime.netpollblock(0x2862f94?, 0x2857ca6?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xc0025e7a38 sp=0xc0025e7a00 pc=0x2888c37
+internal/poll.runtime_pollWait(0x705a30c886f8, 0x72)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xc0025e7a58 sp=0xc0025e7a38 pc=0x28c6925
+internal/poll.(*pollDesc).wait(0xc00262c580?, 0xc00260dc80?, 0x0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc0025e7a80 sp=0xc0025e7a58 pc=0x2958ce7
+internal/poll.(*pollDesc).waitRead(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc00262c580)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_unix.go:620 +0x295 fp=0xc0025e7b28 sp=0xc0025e7a80 pc=0x295e1f5
+net.(*netFD).accept(0xc00262c580)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/fd_unix.go:172 +0x29 fp=0xc0025e7be0 sp=0xc0025e7b28 pc=0x2bf3449
+net.(*TCPListener).accept(0xc002271d80)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/tcpsock_posix.go:159 +0x1b fp=0xc0025e7c30 sp=0xc0025e7be0 pc=0x2c0e1fb
+net.(*TCPListener).Accept(0xc002271d80)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/tcpsock.go:380 +0x30 fp=0xc0025e7c60 sp=0xc0025e7c30 pc=0x2c0d210
+github.com/milvus-io/milvus/pkg/v2/util/netutil.(*NetListener).Accept(0x843a8c0?)
+	<autogenerated>:1 +0x24 fp=0xc0025e7c78 sp=0xc0025e7c60 pc=0x5e4dda4
+google.golang.org/grpc.(*Server).Serve(0xc002606400, {0x83bd210, 0xc00260eb10})
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/server.go:890 +0x473 fp=0xc0025e7dd8 sp=0xc0025e7c78 pc=0x2ffd673
+github.com/milvus-io/milvus/internal/distributed/datanode.(*Server).startGrpcLoop(0xc001270e70)
+	/home/jenkins/agent/workspace/internal/distributed/datanode/service.go:158 +0x89b fp=0xc0025e7fc8 sp=0xc0025e7dd8 pc=0x5e4f1bb
+github.com/milvus-io/milvus/internal/distributed/datanode.(*Server).startGrpc.gowrap1()
+	/home/jenkins/agent/workspace/internal/distributed/datanode/service.go:101 +0x25 fp=0xc0025e7fe0 sp=0xc0025e7fc8 pc=0x5e4e8e5
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0025e7fe8 sp=0xc0025e7fe0 pc=0x28d0cc1
+created by github.com/milvus-io/milvus/internal/distributed/datanode.(*Server).startGrpc in goroutine 374
+	/home/jenkins/agent/workspace/internal/distributed/datanode/service.go:101 +0x65
+
+goroutine 191 gp=0xc0021b6000 m=nil [select]:
+runtime.gopark(0xc002272778?, 0x2?, 0x78?, 0xaa?, 0xc002272764?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0022725f0 sp=0xc0022725d0 pc=0x28c804e
+runtime.selectgo(0xc002272778, 0xc002272760, 0x0?, 0x0, 0x0?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc002272728 sp=0xc0022725f0 pc=0x28a3657
+github.com/hashicorp/golang-lru/v2/expirable.NewLRU[...].func1()
+	/go/pkg/mod/github.com/hashicorp/golang-lru/v2@v2.0.7/expirable/expirable_lru.go:86 +0xf5 fp=0xc0022727c8 sp=0xc002272728 pc=0x663b4d5
+github.com/hashicorp/golang-lru/v2/expirable.NewLRU[...].gowrap1()
+	/go/pkg/mod/github.com/hashicorp/golang-lru/v2@v2.0.7/expirable/expirable_lru.go:93 +0x24 fp=0xc0022727e0 sp=0xc0022727c8 pc=0x663b3a4
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0022727e8 sp=0xc0022727e0 pc=0x28d0cc1
+created by github.com/hashicorp/golang-lru/v2/expirable.NewLRU[...] in goroutine 199
+	/go/pkg/mod/github.com/hashicorp/golang-lru/v2@v2.0.7/expirable/expirable_lru.go:82 +0x32a
+
+goroutine 484 gp=0xc0025b4c40 m=nil [select]:
+runtime.gopark(0xc0024f5f78?, 0x2?, 0x78?, 0xaa?, 0xc0024f5ef4?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc0024f5d80 sp=0xc0024f5d60 pc=0x28c804e
+runtime.selectgo(0xc0024f5f78, 0xc0024f5ef0, 0x0?, 0x0, 0xc0024f5fa8?, 0x1)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/select.go:351 +0x837 fp=0xc0024f5eb8 sp=0xc0024f5d80 pc=0x28a3657
+google.golang.org/grpc/internal/transport.(*http2Client).keepalive(0xc0025d6248)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1713 +0x18a fp=0xc0024f5fc8 sp=0xc0024f5eb8 pc=0x2f6f8aa
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap3()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:404 +0x25 fp=0xc0024f5fe0 sp=0xc0024f5fc8 pc=0x2f65365
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc0024f5fe8 sp=0xc0024f5fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 472
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:404 +0x1dfb
+
+goroutine 485 gp=0xc0025b4e00 m=nil [IO wait]:
+runtime.gopark(0xffffffffffffffff?, 0x11?, 0x0?, 0x0?, 0xb?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/proc.go:435 +0xce fp=0xc002083b20 sp=0xc002083b00 pc=0x28c804e
+runtime.netpollblock(0x2934d18?, 0x2857ca6?, 0x0?)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:575 +0xf7 fp=0xc002083b58 sp=0xc002083b20 pc=0x2888c37
+internal/poll.runtime_pollWait(0x705a30c884c8, 0x72)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/netpoll.go:351 +0x85 fp=0xc002083b78 sp=0xc002083b58 pc=0x28c6925
+internal/poll.(*pollDesc).wait(0xc00259d400?, 0xc0025ea000?, 0x0)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc002083ba0 sp=0xc002083b78 pc=0x2958ce7
+internal/poll.(*pollDesc).waitRead(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc00259d400, {0xc0025ea000, 0x8000, 0x8000})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/internal/poll/fd_unix.go:165 +0x27a fp=0xc002083c38 sp=0xc002083ba0 pc=0x295a11a
+net.(*netFD).Read(0xc00259d400, {0xc0025ea000?, 0x0?, 0x500000002580f50?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/fd_posix.go:55 +0x25 fp=0xc002083c80 sp=0xc002083c38 pc=0x2bf1465
+net.(*conn).Read(0xc0025940f8, {0xc0025ea000?, 0x28?, 0x75bbe00?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/net/net.go:194 +0x45 fp=0xc002083cc8 sp=0xc002083c80 pc=0x2c041e5
+bufio.(*Reader).Read(0xc0025849c0, {0xc0014a2204, 0x9, 0xc00110e801?})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/bufio/bufio.go:245 +0x197 fp=0xc002083d00 sp=0xc002083cc8 pc=0x2a00e97
+io.ReadAtLeast({0x837b440, 0xc0025849c0}, {0xc0014a2204, 0x9, 0x9}, 0x9)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:335 +0x91 fp=0xc002083d48 sp=0xc002083d00 pc=0x2925111
+io.ReadFull(...)
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc0014a2204, 0x9, 0xc000000000?}, {0x837b440?, 0xc0025849c0?})
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65 fp=0xc002083d98 sp=0xc002083d48 pc=0x2f1e745
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc0014a21c0)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b fp=0xc002083e20 sp=0xc002083d98 pc=0x2f1f34b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc0014a21c0)
+	/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18 fp=0xc002083e60 sp=0xc002083e20 pc=0x2f1fa98
+google.golang.org/grpc/internal/transport.(*http2Client).reader(0xc0025d6248, 0xc00130d180)
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:1640 +0x1d2 fp=0xc002083fc0 sp=0xc002083e60 pc=0x2f6f032
+google.golang.org/grpc/internal/transport.NewHTTP2Client.gowrap4()
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x25 fp=0xc002083fe0 sp=0xc002083fc0 pc=0x2f65305
+runtime.goexit({})
+	/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.11.linux-amd64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc002083fe8 sp=0xc002083fe0 pc=0x28d0cc1
+created by google.golang.org/grpc/internal/transport.NewHTTP2Client in goroutine 472
+	/go/pkg/mod/google.golang.org/grpc@v1.71.1/internal/transport/http2_client.go:414 +0x1e73

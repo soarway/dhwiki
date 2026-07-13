@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  knowledge-base-frontend:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

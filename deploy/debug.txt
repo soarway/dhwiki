@@ -1,0 +1,9 @@
+[2026-07-06 22:20:15,628: INFO/MainProcess] Task app.tasks.aeo_plugin.run_aeo_plugin[e6dedbea-d096-415b-b821-18bc946b352c] received
+[2026-07-06 22:20:20,987: INFO/ForkPoolWorker-1] Task app.tasks.aeo_plugin.run_aeo_plugin[e6dedbea-d096-415b-b821-18bc946b352c] succeeded in 5.357892551925033s: {'result': 'fail', 'detail': '• 文件「美晟营业执照.png」 DeepSeek 分析失败：Connection error.
+• 文件「海关注册登记证书1.jpg」 DeepSeek 分析失败：Connection error.
+• 文件「海关注册登记证书2.jpg」 DeepSeek 分析失败：Connection error.
+• 「证照」知识库中未找到有效的营业执照，请上传加盖公章的有效期内营业执照扫描件。
+• 「证照」知识库中未找到有效的海关注册登记证书（或海关进出口收发货人备案回执），请上传相关证件扫描件。
+• 未找到名为「公司组织架构图」的知识库（dir_tag=aeo_basic），请在 AEO 基本信息目录下创建该知识库并上传组织架构图文件。'}
+[2026-07-06 22:23:57,049: INFO/MainProcess] Task app.tasks.sync_directory.scan_all_watch_dirs[8c475609-431e-4c57-9cdf-68a84ad47731] received
+[2026-07-06 22:23:57,317: INFO/ForkPoolWorker-1] Task app.tasks.sync_directory.scan_all_watch_dirs[8c475609-431e-4c57-9cdf-68a84ad47731] succeeded in 0.26629220182076097s: [{'watch_dir_id': 1, 'new': 0, 'updated': 0, 'unchanged': 24, 'errors': 0}]
