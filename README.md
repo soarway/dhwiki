@@ -14,6 +14,10 @@ An AI-powered knowledge base built specifically for SMBs. It supports private on
 ![系统菜单](doc/images/sys_menu.png)
 ![用户列表](doc/images/user.png)
 
+# 有问题可以加入WeChat社区与其他用户和开发者交流
+![联系我们](doc/images/qrcode.png)
+
+
 
 
 
